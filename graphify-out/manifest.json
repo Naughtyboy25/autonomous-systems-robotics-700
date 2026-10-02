@@ -1,0 +1,134 @@
+{
+  "common/__init__.py": {
+    "mtime": 1790903460.856185,
+    "seen": 1790956619.4252741,
+    "ast_hash": "51b80b43ae21c28b9464b6d11ed0230c",
+    "semantic_hash": ""
+  },
+  "common/environment.py": {
+    "mtime": 1790951748.9115312,
+    "seen": 1790956619.4252813,
+    "ast_hash": "83e1ec635cbe63b0245232c5f32ddfe2",
+    "semantic_hash": ""
+  },
+  "component_a/__init__.py": {
+    "mtime": 1790903588.062,
+    "seen": 1790956619.425285,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "component_a/control/__init__.py": {
+    "mtime": 1790903588.088,
+    "seen": 1790956619.4252875,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "component_a/control/kinematics.py": {
+    "mtime": 1790951860.916893,
+    "seen": 1790956619.425289,
+    "ast_hash": "de5dc19bb11d1b1c7fad830b720eadd1",
+    "semantic_hash": ""
+  },
+  "component_a/control/path_tracker.py": {
+    "mtime": 1790952051.3527517,
+    "seen": 1790956619.4252906,
+    "ast_hash": "8280e586716489c444e3d4e7d6a265dc",
+    "semantic_hash": ""
+  },
+  "component_a/control/pid.py": {
+    "mtime": 1790951860.9188938,
+    "seen": 1790956619.425292,
+    "ast_hash": "029f675050880f1895007c8bd347f67a",
+    "semantic_hash": ""
+  },
+  "component_a/control/run_control.py": {
+    "mtime": 1790955073.6945858,
+    "seen": 1790956619.4252932,
+    "ast_hash": "d7b8a85b83afc8a775d106d96810eb12",
+    "semantic_hash": ""
+  },
+  "component_a/integration/__init__.py": {
+    "mtime": 1790903588.089,
+    "seen": 1790956619.425295,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "component_a/perception/__init__.py": {
+    "mtime": 1790903588.086,
+    "seen": 1790956619.4252963,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "component_a/planning/__init__.py": {
+    "mtime": 1790903588.088,
+    "seen": 1790956619.425298,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "component_b/__init__.py": {
+    "mtime": 1790903588.089,
+    "seen": 1790956619.4252996,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "component_b/consensus/__init__.py": {
+    "mtime": 1790903588.09,
+    "seen": 1790956619.425301,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "component_b/ml/__init__.py": {
+    "mtime": 1790903588.091,
+    "seen": 1790956619.4253025,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "component_b/swarm/__init__.py": {
+    "mtime": 1790903588.09,
+    "seen": 1790956619.4253044,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "pyproject.toml": {
+    "mtime": 1790903025.389619,
+    "seen": 1790956619.4253058,
+    "ast_hash": "bd24c13c81c6e00e200354b43bdc4387",
+    "semantic_hash": ""
+  },
+  "scripts/__init__.py": {
+    "mtime": 1790903588.094,
+    "seen": 1790956619.4253073,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "assignment.txt": {
+    "mtime": 1790881534.5238066,
+    "seen": 1790956619.4253087,
+    "ast_hash": "dc85ddf6f7356acb27f47b8ecfe1473f",
+    "semantic_hash": ""
+  },
+  "results/a3_pid_tuning_table.md": {
+    "mtime": 1790955352.1546514,
+    "seen": 1790956619.4253101,
+    "ast_hash": "03362b94ecee55b882e8e24c184c9e0f",
+    "semantic_hash": ""
+  },
+  "assignment.pdf": {
+    "mtime": 1790884683.0602655,
+    "seen": 1790956619.425312,
+    "ast_hash": "b13d0a9368e33f196aaefb794ad162da",
+    "semantic_hash": ""
+  },
+  "plots/a3_pid_path_tracking.png": {
+    "mtime": 1790955352.131341,
+    "seen": 1790956619.4253135,
+    "ast_hash": "db3fb9a0d20e0f2397f2b51c6daea440",
+    "semantic_hash": ""
+  },
+  "plots/a3_pid_step_response.png": {
+    "mtime": 1790955344.3035665,
+    "seen": 1790956619.4253151,
+    "ast_hash": "d5a53632ad9f33bd16c65200b51d2c1e",
+    "semantic_hash": ""
+  }
+}
