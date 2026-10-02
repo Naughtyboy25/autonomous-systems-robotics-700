@@ -1,0 +1,128 @@
+{
+  "common/__init__.py": {
+    "mtime": 1790903460.856185,
+    "seen": 1790951601.61985,
+    "ast_hash": "51b80b43ae21c28b9464b6d11ed0230c",
+    "semantic_hash": ""
+  },
+  "common/environment.py": {
+    "mtime": 1790950025.1977687,
+    "seen": 1790951601.6198626,
+    "ast_hash": "83e1ec635cbe63b0245232c5f32ddfe2",
+    "semantic_hash": ""
+  },
+  "component_a/__init__.py": {
+    "mtime": 1790903588.062,
+    "seen": 1790951601.619869,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "component_a/control/__init__.py": {
+    "mtime": 1790903588.088,
+    "seen": 1790951601.6198726,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "component_a/integration/__init__.py": {
+    "mtime": 1790903588.089,
+    "seen": 1790951601.6198754,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "component_a/perception/__init__.py": {
+    "mtime": 1790903588.086,
+    "seen": 1790951601.619878,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "component_a/planning/__init__.py": {
+    "mtime": 1790903588.088,
+    "seen": 1790951601.6198812,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "component_a/planning/astar.py": {
+    "mtime": 1790951281.6128418,
+    "seen": 1790951601.6198835,
+    "ast_hash": "d13ea50a6820da43dc8cb8568fbc7cba",
+    "semantic_hash": ""
+  },
+  "component_a/planning/dijkstra.py": {
+    "mtime": 1790950642.095956,
+    "seen": 1790951601.6198862,
+    "ast_hash": "0c57994c1e27b0ce0eb77afebea004a6",
+    "semantic_hash": ""
+  },
+  "component_a/planning/grid_graph.py": {
+    "mtime": 1790950642.0928268,
+    "seen": 1790951601.6198885,
+    "ast_hash": "4ce85a11bbf67f550295ee7a51d21d53",
+    "semantic_hash": ""
+  },
+  "component_a/planning/run_planning.py": {
+    "mtime": 1790951281.636133,
+    "seen": 1790951601.6198914,
+    "ast_hash": "08c5451716389997520f7fcb7d3322f0",
+    "semantic_hash": ""
+  },
+  "component_b/__init__.py": {
+    "mtime": 1790903588.089,
+    "seen": 1790951601.6198947,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "component_b/consensus/__init__.py": {
+    "mtime": 1790903588.09,
+    "seen": 1790951601.6198986,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "component_b/ml/__init__.py": {
+    "mtime": 1790903588.091,
+    "seen": 1790951601.6199017,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "component_b/swarm/__init__.py": {
+    "mtime": 1790903588.09,
+    "seen": 1790951601.6199043,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "pyproject.toml": {
+    "mtime": 1790903025.389619,
+    "seen": 1790951601.619907,
+    "ast_hash": "bd24c13c81c6e00e200354b43bdc4387",
+    "semantic_hash": ""
+  },
+  "scripts/__init__.py": {
+    "mtime": 1790903588.094,
+    "seen": 1790951601.619909,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  "assignment.txt": {
+    "mtime": 1790881534.5238066,
+    "seen": 1790951601.6199117,
+    "ast_hash": "dc85ddf6f7356acb27f47b8ecfe1473f",
+    "semantic_hash": ""
+  },
+  "results/a2_planning_comparison.md": {
+    "mtime": 1790951420.6372297,
+    "seen": 1790951601.619914,
+    "ast_hash": "0d7a2901b9b0981a081c2ca7c536aef8",
+    "semantic_hash": ""
+  },
+  "assignment.pdf": {
+    "mtime": 1790884683.0602655,
+    "seen": 1790951601.6199164,
+    "ast_hash": "b13d0a9368e33f196aaefb794ad162da",
+    "semantic_hash": ""
+  },
+  "plots/a2_paths_comparison.png": {
+    "mtime": 1790951420.6083195,
+    "seen": 1790951601.6199193,
+    "ast_hash": "a9e082d2bcf873807493ca3cfac46935",
+    "semantic_hash": ""
+  }
+}

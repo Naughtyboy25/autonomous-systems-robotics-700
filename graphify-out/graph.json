@@ -1,0 +1,1761 @@
+{
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "failed_sources": [],
+  "nodes": [
+    {
+      "id": "common_init",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "common/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "common_init_rationale_1",
+      "label": "Shared utilities for the ASR700 assignment project.",
+      "file_type": "rationale",
+      "source_file": "common/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment",
+      "label": "environment.py",
+      "file_type": "code",
+      "source_file": "common/environment.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_gridworld",
+      "label": "GridWorld",
+      "file_type": "code",
+      "source_file": "common/environment.py",
+      "source_location": "L32",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_gridworld_post_init",
+      "label": ".__post_init__()",
+      "file_type": "code",
+      "source_file": "common/environment.py",
+      "source_location": "L41",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_gridworld_add_border_walls",
+      "label": ".add_border_walls()",
+      "file_type": "code",
+      "source_file": "common/environment.py",
+      "source_location": "L49",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_gridworld_add_rect",
+      "label": ".add_rect()",
+      "file_type": "code",
+      "source_file": "common/environment.py",
+      "source_location": "L57",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_gridworld_add_circle",
+      "label": ".add_circle()",
+      "file_type": "code",
+      "source_file": "common/environment.py",
+      "source_location": "L65",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_gridworld_add_landmark",
+      "label": ".add_landmark()",
+      "file_type": "code",
+      "source_file": "common/environment.py",
+      "source_location": "L73",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_gridworld_world_to_grid",
+      "label": ".world_to_grid()",
+      "file_type": "code",
+      "source_file": "common/environment.py",
+      "source_location": "L80",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_gridworld_grid_to_world",
+      "label": ".grid_to_world()",
+      "file_type": "code",
+      "source_file": "common/environment.py",
+      "source_location": "L85",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_gridworld_in_bounds",
+      "label": ".in_bounds()",
+      "file_type": "code",
+      "source_file": "common/environment.py",
+      "source_location": "L88",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_gridworld_is_free",
+      "label": ".is_free()",
+      "file_type": "code",
+      "source_file": "common/environment.py",
+      "source_location": "L91",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_gridworld_is_free_world",
+      "label": ".is_free_world()",
+      "file_type": "code",
+      "source_file": "common/environment.py",
+      "source_location": "L94",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_gridworld_ray_cast",
+      "label": ".ray_cast()",
+      "file_type": "code",
+      "source_file": "common/environment.py",
+      "source_location": "L100",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_make_assignment_arena",
+      "label": "make_assignment_arena()",
+      "file_type": "code",
+      "source_file": "common/environment.py",
+      "source_location": "L123",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_rationale_1",
+      "label": "Shared 2-D occupancy-grid world model for the ASR700 assignment. This module is…",
+      "file_type": "rationale",
+      "source_file": "common/environment.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_rationale_33",
+      "label": "A rectangular 2-D occupancy grid with metric extents.",
+      "file_type": "rationale",
+      "source_file": "common/environment.py",
+      "source_location": "L33",
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_rationale_50",
+      "label": "Add a wall ring around the arena (required for ray-casting).",
+      "file_type": "rationale",
+      "source_file": "common/environment.py",
+      "source_location": "L50",
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_rationale_58",
+      "label": "Add an axis-aligned rectangular obstacle (metric corners).",
+      "file_type": "rationale",
+      "source_file": "common/environment.py",
+      "source_location": "L58",
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_rationale_66",
+      "label": "Add a circular obstacle (represents e.g. a pillar or a barrel).",
+      "file_type": "rationale",
+      "source_file": "common/environment.py",
+      "source_location": "L66",
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_rationale_74",
+      "label": "Register a visual landmark (used by the camera simulator only).",
+      "file_type": "rationale",
+      "source_file": "common/environment.py",
+      "source_location": "L74",
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_rationale_101",
+      "label": "March along a ray and return the distance to the first obstacle. A fine step of…",
+      "file_type": "rationale",
+      "source_file": "common/environment.py",
+      "source_location": "L101",
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_rationale_124",
+      "label": "Build the deterministic 20 m x 20 m arena used throughout Component A. Layout:…",
+      "file_type": "rationale",
+      "source_file": "common/environment.py",
+      "source_location": "L124",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_init",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "component_a/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_control_init",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "component_a/control/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_integration_init",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "component_a/integration/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_perception_init",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "component_a/perception/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_planning_init",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "component_a/planning/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_planning_astar",
+      "label": "astar.py",
+      "file_type": "code",
+      "source_file": "component_a/planning/astar.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_planning_astar_heuristic",
+      "label": "_heuristic()",
+      "file_type": "code",
+      "source_file": "component_a/planning/astar.py",
+      "source_location": "L25",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_planning_astar_astar",
+      "label": "astar()",
+      "file_type": "code",
+      "source_file": "component_a/planning/astar.py",
+      "source_location": "L37",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_planning_astar_rationale_1",
+      "label": "A* search with switchable heuristics (A2). Heuristics ---------- *…",
+      "file_type": "rationale",
+      "source_file": "component_a/planning/astar.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_planning_astar_rationale_43",
+      "label": "A* search; identical interface to :func:`dijkstra.dijkstra`.",
+      "file_type": "rationale",
+      "source_file": "component_a/planning/astar.py",
+      "source_location": "L43",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_planning_dijkstra",
+      "label": "dijkstra.py",
+      "file_type": "code",
+      "source_file": "component_a/planning/dijkstra.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_planning_dijkstra_searchresult",
+      "label": "SearchResult",
+      "file_type": "code",
+      "source_file": "component_a/planning/dijkstra.py",
+      "source_location": "L20",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_planning_dijkstra_dijkstra",
+      "label": "dijkstra()",
+      "file_type": "code",
+      "source_file": "component_a/planning/dijkstra.py",
+      "source_location": "L29",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_planning_dijkstra_rationale_1",
+      "label": "Dijkstra's algorithm on the implicit grid graph (A2). Optimality: Dijkstra…",
+      "file_type": "rationale",
+      "source_file": "component_a/planning/dijkstra.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_planning_dijkstra_rationale_32",
+      "label": "Classic Dijkstra shortest-path search; returns path and statistics.",
+      "file_type": "rationale",
+      "source_file": "component_a/planning/dijkstra.py",
+      "source_location": "L32",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_planning_grid_graph",
+      "label": "grid_graph.py",
+      "file_type": "code",
+      "source_file": "component_a/planning/grid_graph.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_planning_grid_graph_gridgraph",
+      "label": "GridGraph",
+      "file_type": "code",
+      "source_file": "component_a/planning/grid_graph.py",
+      "source_location": "L33",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_planning_grid_graph_gridgraph_from_world",
+      "label": ".from_world()",
+      "file_type": "code",
+      "source_file": "component_a/planning/grid_graph.py",
+      "source_location": "L40",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_planning_grid_graph_gridgraph_from_probability_grid",
+      "label": ".from_probability_grid()",
+      "file_type": "code",
+      "source_file": "component_a/planning/grid_graph.py",
+      "source_location": "L51",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "ndarray",
+      "label": "ndarray",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_planning_grid_graph_gridgraph_neighbours",
+      "label": ".neighbours()",
+      "file_type": "code",
+      "source_file": "component_a/planning/grid_graph.py",
+      "source_location": "L63",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_planning_grid_graph_path_length_m",
+      "label": "path_length_m()",
+      "file_type": "code",
+      "source_file": "component_a/planning/grid_graph.py",
+      "source_location": "L80",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_planning_grid_graph_rationale_1",
+      "label": "Grid-graph abstraction of the occupancy grid for path planning (A2).…",
+      "file_type": "rationale",
+      "source_file": "component_a/planning/grid_graph.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_planning_grid_graph_rationale_34",
+      "label": "Implicit 8-connected graph over the free cells of a binary grid.",
+      "file_type": "rationale",
+      "source_file": "component_a/planning/grid_graph.py",
+      "source_location": "L34",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_planning_grid_graph_rationale_41",
+      "label": "Build from a GridWorld, inflating obstacles by the robot radius.",
+      "file_type": "rationale",
+      "source_file": "component_a/planning/grid_graph.py",
+      "source_location": "L41",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_planning_grid_graph_rationale_55",
+      "label": "Build from a fused probability grid (used by the integration node).",
+      "file_type": "rationale",
+      "source_file": "component_a/planning/grid_graph.py",
+      "source_location": "L55",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_planning_grid_graph_rationale_64",
+      "label": "Yield ``(neighbour_node, metric_cost)`` pairs; corner-cutting blocked.",
+      "file_type": "rationale",
+      "source_file": "component_a/planning/grid_graph.py",
+      "source_location": "L64",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_planning_grid_graph_rationale_81",
+      "label": "Metric length of a grid path (sum of edge costs).",
+      "file_type": "rationale",
+      "source_file": "component_a/planning/grid_graph.py",
+      "source_location": "L81",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_planning_run_planning",
+      "label": "run_planning.py",
+      "file_type": "code",
+      "source_file": "component_a/planning/run_planning.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_planning_run_planning_draw",
+      "label": "_draw()",
+      "file_type": "code",
+      "source_file": "component_a/planning/run_planning.py",
+      "source_location": "L26",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_planning_run_planning_main",
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "component_a/planning/run_planning.py",
+      "source_location": "L39",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_planning_run_planning_rationale_1",
+      "label": "Component A2 driver: benchmark Dijkstra vs A* on the assignment arena. Compares…",
+      "file_type": "rationale",
+      "source_file": "component_a/planning/run_planning.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_init",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "component_b/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_consensus_init",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "component_b/consensus/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_ml_init",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "component_b/ml/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_swarm_init",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "component_b/swarm/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "pkg_autonomous_systems_robotics_700",
+      "label": "autonomous-systems-robotics-700",
+      "file_type": "code",
+      "type": "package",
+      "ecosystem": "python",
+      "source_file": "pyproject.toml",
+      "source_location": "L1",
+      "version": "0.1.0",
+      "_origin": "ast"
+    },
+    {
+      "id": "scripts_init",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "scripts/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "results_a2_planning_comparison",
+      "label": "a2_planning_comparison.md",
+      "file_type": "document",
+      "source_file": "results/a2_planning_comparison.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "results_a2_planning_comparison_component_a2_planner_comparison_start_1_5_1_5_goal_18_0_17_0",
+      "label": "Component A2 - Planner comparison (start (1.5, 1.5) -> goal (18.0, 17.0))",
+      "file_type": "document",
+      "source_file": "results/a2_planning_comparison.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    }
+  ],
+  "links": [
+    {
+      "source": "common_init_rationale_1",
+      "target": "common_init",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "common/__init__.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment",
+      "target": "dataclasses",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment",
+      "target": "numpy",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment",
+      "target": "common_environment_gridworld",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld",
+      "target": "common_environment_gridworld_post_init",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld",
+      "target": "common_environment_gridworld_add_border_walls",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld",
+      "target": "common_environment_gridworld_add_rect",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L57",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld",
+      "target": "common_environment_gridworld_add_circle",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L65",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld",
+      "target": "common_environment_gridworld_add_landmark",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld",
+      "target": "common_environment_gridworld_world_to_grid",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L80",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld",
+      "target": "common_environment_gridworld_grid_to_world",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L85",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld",
+      "target": "common_environment_gridworld_in_bounds",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L88",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld",
+      "target": "common_environment_gridworld_is_free",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L91",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld",
+      "target": "common_environment_gridworld_is_free_world",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L94",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld",
+      "target": "common_environment_gridworld_ray_cast",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L100",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment",
+      "target": "common_environment_make_assignment_arena",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L123",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_make_assignment_arena",
+      "target": "common_environment_gridworld",
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L123",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld_add_rect",
+      "target": "common_environment_gridworld_world_to_grid",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L59",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld_is_free",
+      "target": "common_environment_gridworld_in_bounds",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L92",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld_is_free_world",
+      "target": "common_environment_gridworld_is_free",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L95",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld_is_free_world",
+      "target": "common_environment_gridworld_world_to_grid",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L95",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld_ray_cast",
+      "target": "common_environment_gridworld_world_to_grid",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L114",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld_ray_cast",
+      "target": "common_environment_gridworld_in_bounds",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L115",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_make_assignment_arena",
+      "target": "common_environment_gridworld",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L133",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_rationale_1",
+      "target": "common_environment",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_rationale_33",
+      "target": "common_environment_gridworld",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_rationale_50",
+      "target": "common_environment_gridworld_add_border_walls",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L50",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_rationale_58",
+      "target": "common_environment_gridworld_add_rect",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L58",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_rationale_66",
+      "target": "common_environment_gridworld_add_circle",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L66",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_rationale_74",
+      "target": "common_environment_gridworld_add_landmark",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L74",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_rationale_101",
+      "target": "common_environment_gridworld_ray_cast",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L101",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_rationale_124",
+      "target": "common_environment_make_assignment_arena",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L124",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_astar",
+      "target": "heapq",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/astar.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_astar",
+      "target": "time",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/astar.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_astar",
+      "target": "component_a_planning_dijkstra",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/astar.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_astar",
+      "target": "component_a_planning_grid_graph",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/astar.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_astar",
+      "target": "component_a_planning_astar_heuristic",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/astar.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_astar",
+      "target": "component_a_planning_astar_astar",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/astar.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_astar_astar",
+      "target": "component_a_planning_grid_graph_gridgraph",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/astar.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_astar_astar",
+      "target": "component_a_planning_dijkstra_searchresult",
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/astar.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_astar_astar",
+      "target": "component_a_planning_astar_heuristic",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/astar.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_astar_astar",
+      "target": "component_a_planning_dijkstra_searchresult",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/astar.py",
+      "source_location": "L64",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_astar_rationale_1",
+      "target": "component_a_planning_astar",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/astar.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_astar_rationale_43",
+      "target": "component_a_planning_astar_astar",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/astar.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_dijkstra",
+      "target": "heapq",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/dijkstra.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_dijkstra",
+      "target": "time",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/dijkstra.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_dijkstra",
+      "target": "dataclasses",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/dijkstra.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_dijkstra",
+      "target": "component_a_planning_grid_graph",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/dijkstra.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_dijkstra",
+      "target": "component_a_planning_dijkstra_searchresult",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/dijkstra.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_dijkstra",
+      "target": "component_a_planning_dijkstra_dijkstra",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/dijkstra.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_dijkstra_dijkstra",
+      "target": "component_a_planning_grid_graph_gridgraph",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/dijkstra.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_dijkstra_dijkstra",
+      "target": "component_a_planning_dijkstra_searchresult",
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/dijkstra.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_dijkstra_dijkstra",
+      "target": "component_a_planning_dijkstra_searchresult",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/dijkstra.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_dijkstra_rationale_1",
+      "target": "component_a_planning_dijkstra",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/dijkstra.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_dijkstra_rationale_32",
+      "target": "component_a_planning_dijkstra_dijkstra",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/dijkstra.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_grid_graph",
+      "target": "dataclasses",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/grid_graph.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_grid_graph",
+      "target": "numpy",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/grid_graph.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_grid_graph",
+      "target": "scipy",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/grid_graph.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_grid_graph",
+      "target": "common_environment",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/grid_graph.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_grid_graph",
+      "target": "component_a_planning_grid_graph_gridgraph",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/grid_graph.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_grid_graph_gridgraph",
+      "target": "component_a_planning_grid_graph_gridgraph_from_world",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/grid_graph.py",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_grid_graph_gridgraph_from_world",
+      "target": "common_environment_gridworld",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/grid_graph.py",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_grid_graph_gridgraph",
+      "target": "component_a_planning_grid_graph_gridgraph_from_probability_grid",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/grid_graph.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_grid_graph_gridgraph_from_probability_grid",
+      "target": "ndarray",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/grid_graph.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_grid_graph_gridgraph",
+      "target": "component_a_planning_grid_graph_gridgraph_neighbours",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/grid_graph.py",
+      "source_location": "L63",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_grid_graph",
+      "target": "component_a_planning_grid_graph_path_length_m",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/grid_graph.py",
+      "source_location": "L80",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_grid_graph_rationale_1",
+      "target": "component_a_planning_grid_graph",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/grid_graph.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_grid_graph_rationale_34",
+      "target": "component_a_planning_grid_graph_gridgraph",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/grid_graph.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_grid_graph_rationale_41",
+      "target": "component_a_planning_grid_graph_gridgraph_from_world",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/grid_graph.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_grid_graph_rationale_55",
+      "target": "component_a_planning_grid_graph_gridgraph_from_probability_grid",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/grid_graph.py",
+      "source_location": "L55",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_grid_graph_rationale_64",
+      "target": "component_a_planning_grid_graph_gridgraph_neighbours",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/grid_graph.py",
+      "source_location": "L64",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_grid_graph_rationale_81",
+      "target": "component_a_planning_grid_graph_path_length_m",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/grid_graph.py",
+      "source_location": "L81",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_run_planning",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/run_planning.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_run_planning",
+      "target": "matplotlib_pyplot",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/run_planning.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_run_planning",
+      "target": "numpy",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/run_planning.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_run_planning",
+      "target": "common_environment",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/run_planning.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_run_planning",
+      "target": "component_a_planning_astar",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/run_planning.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_run_planning",
+      "target": "component_a_planning_dijkstra",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/run_planning.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_run_planning",
+      "target": "component_a_planning_grid_graph",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/run_planning.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_run_planning",
+      "target": "component_a_planning_run_planning_draw",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/run_planning.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_run_planning_draw",
+      "target": "component_a_planning_grid_graph_gridgraph",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/run_planning.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_run_planning_draw",
+      "target": "component_a_planning_dijkstra_searchresult",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/run_planning.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_run_planning",
+      "target": "component_a_planning_run_planning_main",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/run_planning.py",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_run_planning_main",
+      "target": "component_a_planning_run_planning_draw",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/run_planning.py",
+      "source_location": "L59",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_run_planning_rationale_1",
+      "target": "component_a_planning_run_planning",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/run_planning.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_autonomous_systems_robotics_700",
+      "target": "pkg_matplotlib",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pyproject.toml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_autonomous_systems_robotics_700",
+      "target": "pkg_numpy",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pyproject.toml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_autonomous_systems_robotics_700",
+      "target": "pkg_opencv_python",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pyproject.toml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_autonomous_systems_robotics_700",
+      "target": "pkg_plotly",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pyproject.toml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_autonomous_systems_robotics_700",
+      "target": "pkg_scikit_learn",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pyproject.toml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_autonomous_systems_robotics_700",
+      "target": "pkg_seaborn",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pyproject.toml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "results_a2_planning_comparison",
+      "target": "results_a2_planning_comparison_component_a2_planner_comparison_start_1_5_1_5_goal_18_0_17_0",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "results/a2_planning_comparison.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_astar",
+      "target": "component_a_planning_dijkstra_searchresult",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/astar.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_astar",
+      "target": "component_a_planning_grid_graph_gridgraph",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/astar.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_dijkstra",
+      "target": "component_a_planning_grid_graph_gridgraph",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/dijkstra.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_grid_graph",
+      "target": "common_environment_gridworld",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/grid_graph.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_run_planning",
+      "target": "common_environment_make_assignment_arena",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/run_planning.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_run_planning",
+      "target": "component_a_planning_astar_astar",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/run_planning.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_run_planning",
+      "target": "component_a_planning_dijkstra_searchresult",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/run_planning.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_run_planning",
+      "target": "component_a_planning_dijkstra_dijkstra",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/run_planning.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_run_planning",
+      "target": "component_a_planning_grid_graph_gridgraph",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/run_planning.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_run_planning",
+      "target": "component_a_planning_grid_graph_path_length_m",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/run_planning.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_run_planning_main",
+      "target": "common_environment_make_assignment_arena",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/run_planning.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_run_planning_main",
+      "target": "component_a_planning_dijkstra_dijkstra",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/run_planning.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_run_planning_main",
+      "target": "component_a_planning_astar_astar",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/run_planning.py",
+      "source_location": "L50",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_run_planning_main",
+      "target": "component_a_planning_grid_graph_path_length_m",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/planning/run_planning.py",
+      "source_location": "L58",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_astar_astar",
+      "target": "component_a_planning_dijkstra_searchresult",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "component_a/planning/astar.py",
+      "source_location": "L42",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_astar_astar",
+      "target": "component_a_planning_grid_graph_gridgraph",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "component_a/planning/astar.py",
+      "source_location": "L38",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_dijkstra_dijkstra",
+      "target": "component_a_planning_grid_graph_gridgraph",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "component_a/planning/dijkstra.py",
+      "source_location": "L30",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_grid_graph_gridgraph",
+      "target": "common_environment_gridworld",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "component_a/planning/grid_graph.py",
+      "source_location": "L40",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_run_planning_draw",
+      "target": "component_a_planning_dijkstra_searchresult",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "component_a/planning/run_planning.py",
+      "source_location": "L26",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_run_planning_draw",
+      "target": "component_a_planning_grid_graph_gridgraph",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "component_a/planning/run_planning.py",
+      "source_location": "L26",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_run_planning_main",
+      "target": "component_a_planning_grid_graph_gridgraph",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "component_a/planning/run_planning.py",
+      "source_location": "L44",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_planning_run_planning_main",
+      "target": "component_a_planning_grid_graph_gridgraph_from_world",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "component_a/planning/run_planning.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast"
+    }
+  ],
+  "directed": false
+}
