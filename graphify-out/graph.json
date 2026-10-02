@@ -1,0 +1,2011 @@
+{
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "nodes": [
+    {
+      "id": "common_init",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "common/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "common_init_rationale_1",
+      "label": "Shared utilities for the ASR700 assignment project.",
+      "file_type": "rationale",
+      "source_file": "common/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment",
+      "label": "environment.py",
+      "file_type": "code",
+      "source_file": "common/environment.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_gridworld",
+      "label": "GridWorld",
+      "file_type": "code",
+      "source_file": "common/environment.py",
+      "source_location": "L32",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_gridworld_post_init",
+      "label": ".__post_init__()",
+      "file_type": "code",
+      "source_file": "common/environment.py",
+      "source_location": "L41",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_gridworld_add_border_walls",
+      "label": ".add_border_walls()",
+      "file_type": "code",
+      "source_file": "common/environment.py",
+      "source_location": "L49",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_gridworld_add_rect",
+      "label": ".add_rect()",
+      "file_type": "code",
+      "source_file": "common/environment.py",
+      "source_location": "L57",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_gridworld_add_circle",
+      "label": ".add_circle()",
+      "file_type": "code",
+      "source_file": "common/environment.py",
+      "source_location": "L65",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_gridworld_add_landmark",
+      "label": ".add_landmark()",
+      "file_type": "code",
+      "source_file": "common/environment.py",
+      "source_location": "L73",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_gridworld_world_to_grid",
+      "label": ".world_to_grid()",
+      "file_type": "code",
+      "source_file": "common/environment.py",
+      "source_location": "L80",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_gridworld_grid_to_world",
+      "label": ".grid_to_world()",
+      "file_type": "code",
+      "source_file": "common/environment.py",
+      "source_location": "L85",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_gridworld_in_bounds",
+      "label": ".in_bounds()",
+      "file_type": "code",
+      "source_file": "common/environment.py",
+      "source_location": "L88",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_gridworld_is_free",
+      "label": ".is_free()",
+      "file_type": "code",
+      "source_file": "common/environment.py",
+      "source_location": "L91",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_gridworld_is_free_world",
+      "label": ".is_free_world()",
+      "file_type": "code",
+      "source_file": "common/environment.py",
+      "source_location": "L94",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_gridworld_ray_cast",
+      "label": ".ray_cast()",
+      "file_type": "code",
+      "source_file": "common/environment.py",
+      "source_location": "L100",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_make_assignment_arena",
+      "label": "make_assignment_arena()",
+      "file_type": "code",
+      "source_file": "common/environment.py",
+      "source_location": "L123",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_rationale_1",
+      "label": "Shared 2-D occupancy-grid world model for the ASR700 assignment. This module is…",
+      "file_type": "rationale",
+      "source_file": "common/environment.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_rationale_33",
+      "label": "A rectangular 2-D occupancy grid with metric extents.",
+      "file_type": "rationale",
+      "source_file": "common/environment.py",
+      "source_location": "L33",
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_rationale_50",
+      "label": "Add a wall ring around the arena (required for ray-casting).",
+      "file_type": "rationale",
+      "source_file": "common/environment.py",
+      "source_location": "L50",
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_rationale_58",
+      "label": "Add an axis-aligned rectangular obstacle (metric corners).",
+      "file_type": "rationale",
+      "source_file": "common/environment.py",
+      "source_location": "L58",
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_rationale_66",
+      "label": "Add a circular obstacle (represents e.g. a pillar or a barrel).",
+      "file_type": "rationale",
+      "source_file": "common/environment.py",
+      "source_location": "L66",
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_rationale_74",
+      "label": "Register a visual landmark (used by the camera simulator only).",
+      "file_type": "rationale",
+      "source_file": "common/environment.py",
+      "source_location": "L74",
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_rationale_101",
+      "label": "March along a ray and return the distance to the first obstacle. A fine step of…",
+      "file_type": "rationale",
+      "source_file": "common/environment.py",
+      "source_location": "L101",
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_rationale_124",
+      "label": "Build the deterministic 20 m x 20 m arena used throughout Component A. Layout:…",
+      "file_type": "rationale",
+      "source_file": "common/environment.py",
+      "source_location": "L124",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_init",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "component_a/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_control_init",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "component_a/control/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_integration_init",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "component_a/integration/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_perception_init",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "component_a/perception/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_perception_camera",
+      "label": "camera.py",
+      "file_type": "code",
+      "source_file": "component_a/perception/camera.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_perception_camera_camerasimulator",
+      "label": "CameraSimulator",
+      "file_type": "code",
+      "source_file": "component_a/perception/camera.py",
+      "source_location": "L40",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_perception_camera_camerasimulator_post_init",
+      "label": ".__post_init__()",
+      "file_type": "code",
+      "source_file": "component_a/perception/camera.py",
+      "source_location": "L48",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_perception_camera_camerasimulator_render",
+      "label": ".render()",
+      "file_type": "code",
+      "source_file": "component_a/perception/camera.py",
+      "source_location": "L53",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_perception_camera_py_ndarray",
+      "label": "ndarray",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_perception_camera_camerasimulator_world_to_px",
+      "label": "._world_to_px()",
+      "file_type": "code",
+      "source_file": "component_a/perception/camera.py",
+      "source_location": "L87",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_perception_camera_camerasimulator_px_to_world",
+      "label": ".px_to_world()",
+      "file_type": "code",
+      "source_file": "component_a/perception/camera.py",
+      "source_location": "L93",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_perception_camera_contour_centroids",
+      "label": "_contour_centroids()",
+      "file_type": "code",
+      "source_file": "component_a/perception/camera.py",
+      "source_location": "L98",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_perception_camera_detect_features",
+      "label": "detect_features()",
+      "file_type": "code",
+      "source_file": "component_a/perception/camera.py",
+      "source_location": "L113",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_perception_camera_rationale_1",
+      "label": "Synthetic overhead camera + OpenCV feature extraction (Component A1). Camera…",
+      "file_type": "rationale",
+      "source_file": "component_a/perception/camera.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_perception_camera_rationale_41",
+      "label": "Overhead camera rendering a robot-centred patch of the world.",
+      "file_type": "rationale",
+      "source_file": "component_a/perception/camera.py",
+      "source_location": "L41",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_perception_camera_rationale_54",
+      "label": "Render the visible patch around ``(x, y)``; robot at image centre.",
+      "file_type": "rationale",
+      "source_file": "component_a/perception/camera.py",
+      "source_location": "L54",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_perception_camera_rationale_99",
+      "label": "Return ``(cx, cy, area)`` for each external contour of ``mask``.",
+      "file_type": "rationale",
+      "source_file": "component_a/perception/camera.py",
+      "source_location": "L99",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_perception_camera_rationale_114",
+      "label": "Classical OpenCV pipeline: blur -> segment -> morphology -> contours. Returns…",
+      "file_type": "rationale",
+      "source_file": "component_a/perception/camera.py",
+      "source_location": "L114",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_perception_fusion",
+      "label": "fusion.py",
+      "file_type": "code",
+      "source_file": "component_a/perception/fusion.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_perception_fusion_occupancygridfusion",
+      "label": "OccupancyGridFusion",
+      "file_type": "code",
+      "source_file": "component_a/perception/fusion.py",
+      "source_location": "L41",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_perception_fusion_occupancygridfusion_post_init",
+      "label": ".__post_init__()",
+      "file_type": "code",
+      "source_file": "component_a/perception/fusion.py",
+      "source_location": "L47",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_perception_fusion_occupancygridfusion_integrate_lidar",
+      "label": ".integrate_lidar()",
+      "file_type": "code",
+      "source_file": "component_a/perception/fusion.py",
+      "source_location": "L53",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_perception_fusion_py_ndarray",
+      "label": "ndarray",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_perception_fusion_occupancygridfusion_integrate_camera",
+      "label": ".integrate_camera()",
+      "file_type": "code",
+      "source_file": "component_a/perception/fusion.py",
+      "source_location": "L75",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_perception_fusion_occupancygridfusion_probabilities",
+      "label": ".probabilities()",
+      "file_type": "code",
+      "source_file": "component_a/perception/fusion.py",
+      "source_location": "L91",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_perception_fusion_occupancygridfusion_occupied_mask",
+      "label": ".occupied_mask()",
+      "file_type": "code",
+      "source_file": "component_a/perception/fusion.py",
+      "source_location": "L95",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_perception_fusion_occupancygridfusion_free_mask",
+      "label": ".free_mask()",
+      "file_type": "code",
+      "source_file": "component_a/perception/fusion.py",
+      "source_location": "L98",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_perception_fusion_rationale_1",
+      "label": "Multi-sensor fusion into a log-odds occupancy grid (Component A1). Fusion…",
+      "file_type": "rationale",
+      "source_file": "component_a/perception/fusion.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_perception_fusion_rationale_42",
+      "label": "Log-odds occupancy grid fusing LiDAR scans and camera detections.",
+      "file_type": "rationale",
+      "source_file": "component_a/perception/fusion.py",
+      "source_location": "L42",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_perception_fusion_rationale_54",
+      "label": "Inverse sensor model: cells along each beam are free up to the hit.",
+      "file_type": "rationale",
+      "source_file": "component_a/perception/fusion.py",
+      "source_location": "L54",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_perception_fusion_rationale_76",
+      "label": "Stamp occupied evidence around each detected obstacle centroid.",
+      "file_type": "rationale",
+      "source_file": "component_a/perception/fusion.py",
+      "source_location": "L76",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_perception_fusion_rationale_92",
+      "label": "Convert log-odds back to occupancy probabilities in [0, 1].",
+      "file_type": "rationale",
+      "source_file": "component_a/perception/fusion.py",
+      "source_location": "L92",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_perception_lidar",
+      "label": "lidar.py",
+      "file_type": "code",
+      "source_file": "component_a/perception/lidar.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_perception_lidar_lidarsimulator",
+      "label": "LidarSimulator",
+      "file_type": "code",
+      "source_file": "component_a/perception/lidar.py",
+      "source_location": "L32",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_perception_lidar_lidarsimulator_post_init",
+      "label": ".__post_init__()",
+      "file_type": "code",
+      "source_file": "component_a/perception/lidar.py",
+      "source_location": "L42",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_perception_lidar_lidarsimulator_scan",
+      "label": ".scan()",
+      "file_type": "code",
+      "source_file": "component_a/perception/lidar.py",
+      "source_location": "L45",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_perception_lidar_py_ndarray",
+      "label": "ndarray",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_perception_lidar_rationale_1",
+      "label": "Simulated 2-D LiDAR sensor (Component A1 - sensor simulation). Model ----- The…",
+      "file_type": "rationale",
+      "source_file": "component_a/perception/lidar.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_perception_lidar_rationale_33",
+      "label": "Ray-cast 2-D LiDAR with Gaussian range noise.",
+      "file_type": "rationale",
+      "source_file": "component_a/perception/lidar.py",
+      "source_location": "L33",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_perception_lidar_rationale_46",
+      "label": "Return ``(ranges, bearings)`` for a scan at pose ``(x, y, theta)``.…",
+      "file_type": "rationale",
+      "source_file": "component_a/perception/lidar.py",
+      "source_location": "L46",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_perception_run_perception",
+      "label": "run_perception.py",
+      "file_type": "code",
+      "source_file": "component_a/perception/run_perception.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_perception_run_perception_robot_to_world_detections",
+      "label": "robot_to_world_detections()",
+      "file_type": "code",
+      "source_file": "component_a/perception/run_perception.py",
+      "source_location": "L27",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_perception_run_perception_main",
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "component_a/perception/run_perception.py",
+      "source_location": "L37",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_perception_run_perception_rationale_1",
+      "label": "Component A1 driver: run the full perception pipeline and visualise it.…",
+      "file_type": "rationale",
+      "source_file": "component_a/perception/run_perception.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_perception_run_perception_rationale_33",
+      "label": "Project detected obstacle centroids from pixels to world metres.",
+      "file_type": "rationale",
+      "source_file": "component_a/perception/run_perception.py",
+      "source_location": "L33",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_planning_init",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "component_a/planning/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_init",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "component_b/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_consensus_init",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "component_b/consensus/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_ml_init",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "component_b/ml/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_swarm_init",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "component_b/swarm/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "pkg_autonomous_systems_robotics_700",
+      "label": "autonomous-systems-robotics-700",
+      "file_type": "code",
+      "type": "package",
+      "ecosystem": "python",
+      "source_file": "pyproject.toml",
+      "source_location": "L1",
+      "version": "0.1.0",
+      "_origin": "ast"
+    },
+    {
+      "id": "scripts_init",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "scripts/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "results_a1_sensor_summary",
+      "label": "a1_sensor_summary.md",
+      "file_type": "document",
+      "source_file": "results/a1_sensor_summary.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "results_a1_sensor_summary_component_a1_perception_pipeline_metrics",
+      "label": "Component A1 - Perception pipeline metrics",
+      "file_type": "document",
+      "source_file": "results/a1_sensor_summary.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    }
+  ],
+  "links": [
+    {
+      "source": "common_init_rationale_1",
+      "target": "common_init",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "common/__init__.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment",
+      "target": "dataclasses",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment",
+      "target": "numpy",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment",
+      "target": "common_environment_gridworld",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld",
+      "target": "common_environment_gridworld_post_init",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld",
+      "target": "common_environment_gridworld_add_border_walls",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld",
+      "target": "common_environment_gridworld_add_rect",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L57",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld",
+      "target": "common_environment_gridworld_add_circle",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L65",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld",
+      "target": "common_environment_gridworld_add_landmark",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld",
+      "target": "common_environment_gridworld_world_to_grid",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L80",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld",
+      "target": "common_environment_gridworld_grid_to_world",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L85",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld",
+      "target": "common_environment_gridworld_in_bounds",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L88",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld",
+      "target": "common_environment_gridworld_is_free",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L91",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld",
+      "target": "common_environment_gridworld_is_free_world",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L94",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld",
+      "target": "common_environment_gridworld_ray_cast",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L100",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment",
+      "target": "common_environment_make_assignment_arena",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L123",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_make_assignment_arena",
+      "target": "common_environment_gridworld",
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L123",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld_add_rect",
+      "target": "common_environment_gridworld_world_to_grid",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L59",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld_is_free",
+      "target": "common_environment_gridworld_in_bounds",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L92",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld_is_free_world",
+      "target": "common_environment_gridworld_is_free",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L95",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld_is_free_world",
+      "target": "common_environment_gridworld_world_to_grid",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L95",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld_ray_cast",
+      "target": "common_environment_gridworld_world_to_grid",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L114",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld_ray_cast",
+      "target": "common_environment_gridworld_in_bounds",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L115",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_make_assignment_arena",
+      "target": "common_environment_gridworld",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L133",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_rationale_1",
+      "target": "common_environment",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_rationale_33",
+      "target": "common_environment_gridworld",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_rationale_50",
+      "target": "common_environment_gridworld_add_border_walls",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L50",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_rationale_58",
+      "target": "common_environment_gridworld_add_rect",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L58",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_rationale_66",
+      "target": "common_environment_gridworld_add_circle",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L66",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_rationale_74",
+      "target": "common_environment_gridworld_add_landmark",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L74",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_rationale_101",
+      "target": "common_environment_gridworld_ray_cast",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L101",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_rationale_124",
+      "target": "common_environment_make_assignment_arena",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L124",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_camera",
+      "target": "dataclasses",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/camera.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_camera",
+      "target": "cv2",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/camera.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_camera",
+      "target": "numpy",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/camera.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_camera",
+      "target": "common_environment",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/camera.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_camera",
+      "target": "component_a_perception_camera_camerasimulator",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/camera.py",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_camera_camerasimulator",
+      "target": "component_a_perception_camera_camerasimulator_post_init",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/camera.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_camera_camerasimulator",
+      "target": "component_a_perception_camera_camerasimulator_render",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/camera.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_camera_camerasimulator_render",
+      "target": "component_a_perception_camera_py_ndarray",
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/camera.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_camera_camerasimulator",
+      "target": "component_a_perception_camera_camerasimulator_world_to_px",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/camera.py",
+      "source_location": "L87",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_camera_camerasimulator",
+      "target": "component_a_perception_camera_camerasimulator_px_to_world",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/camera.py",
+      "source_location": "L93",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_camera",
+      "target": "component_a_perception_camera_contour_centroids",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/camera.py",
+      "source_location": "L98",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_camera_contour_centroids",
+      "target": "component_a_perception_camera_py_ndarray",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/camera.py",
+      "source_location": "L98",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_camera",
+      "target": "component_a_perception_camera_detect_features",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/camera.py",
+      "source_location": "L113",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_camera_detect_features",
+      "target": "component_a_perception_camera_py_ndarray",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/camera.py",
+      "source_location": "L113",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_camera_camerasimulator_render",
+      "target": "component_a_perception_camera_camerasimulator_world_to_px",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/camera.py",
+      "source_location": "L67",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_camera_detect_features",
+      "target": "component_a_perception_camera_contour_centroids",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/camera.py",
+      "source_location": "L136",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_camera_rationale_1",
+      "target": "component_a_perception_camera",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/camera.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_camera_rationale_41",
+      "target": "component_a_perception_camera_camerasimulator",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/camera.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_camera_rationale_54",
+      "target": "component_a_perception_camera_camerasimulator_render",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/camera.py",
+      "source_location": "L54",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_camera_rationale_99",
+      "target": "component_a_perception_camera_contour_centroids",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/camera.py",
+      "source_location": "L99",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_camera_rationale_114",
+      "target": "component_a_perception_camera_detect_features",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/camera.py",
+      "source_location": "L114",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_fusion",
+      "target": "dataclasses",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/fusion.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_fusion",
+      "target": "numpy",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/fusion.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_fusion",
+      "target": "common_environment",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/fusion.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_fusion",
+      "target": "component_a_perception_fusion_occupancygridfusion",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/fusion.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_fusion_occupancygridfusion",
+      "target": "component_a_perception_fusion_occupancygridfusion_post_init",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/fusion.py",
+      "source_location": "L47",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_fusion_occupancygridfusion",
+      "target": "component_a_perception_fusion_occupancygridfusion_integrate_lidar",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/fusion.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_fusion_occupancygridfusion_integrate_lidar",
+      "target": "component_a_perception_fusion_py_ndarray",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/fusion.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_fusion_occupancygridfusion",
+      "target": "component_a_perception_fusion_occupancygridfusion_integrate_camera",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/fusion.py",
+      "source_location": "L75",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_fusion_occupancygridfusion",
+      "target": "component_a_perception_fusion_occupancygridfusion_probabilities",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/fusion.py",
+      "source_location": "L91",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_fusion_occupancygridfusion_probabilities",
+      "target": "component_a_perception_fusion_py_ndarray",
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/fusion.py",
+      "source_location": "L91",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_fusion_occupancygridfusion",
+      "target": "component_a_perception_fusion_occupancygridfusion_occupied_mask",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/fusion.py",
+      "source_location": "L95",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_fusion_occupancygridfusion_occupied_mask",
+      "target": "component_a_perception_fusion_py_ndarray",
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/fusion.py",
+      "source_location": "L95",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_fusion_occupancygridfusion",
+      "target": "component_a_perception_fusion_occupancygridfusion_free_mask",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/fusion.py",
+      "source_location": "L98",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_fusion_occupancygridfusion_free_mask",
+      "target": "component_a_perception_fusion_py_ndarray",
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/fusion.py",
+      "source_location": "L98",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_fusion_occupancygridfusion_occupied_mask",
+      "target": "component_a_perception_fusion_occupancygridfusion_probabilities",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/fusion.py",
+      "source_location": "L96",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_fusion_occupancygridfusion_free_mask",
+      "target": "component_a_perception_fusion_occupancygridfusion_probabilities",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/fusion.py",
+      "source_location": "L99",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_fusion_rationale_1",
+      "target": "component_a_perception_fusion",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/fusion.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_fusion_rationale_42",
+      "target": "component_a_perception_fusion_occupancygridfusion",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/fusion.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_fusion_rationale_54",
+      "target": "component_a_perception_fusion_occupancygridfusion_integrate_lidar",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/fusion.py",
+      "source_location": "L54",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_fusion_rationale_76",
+      "target": "component_a_perception_fusion_occupancygridfusion_integrate_camera",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/fusion.py",
+      "source_location": "L76",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_fusion_rationale_92",
+      "target": "component_a_perception_fusion_occupancygridfusion_probabilities",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/fusion.py",
+      "source_location": "L92",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_lidar",
+      "target": "dataclasses",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/lidar.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_lidar",
+      "target": "numpy",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/lidar.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_lidar",
+      "target": "common_environment",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/lidar.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_lidar",
+      "target": "component_a_perception_lidar_lidarsimulator",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/lidar.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_lidar_lidarsimulator",
+      "target": "component_a_perception_lidar_lidarsimulator_post_init",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/lidar.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_lidar_lidarsimulator",
+      "target": "component_a_perception_lidar_lidarsimulator_scan",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/lidar.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_lidar_lidarsimulator_scan",
+      "target": "component_a_perception_lidar_py_ndarray",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/lidar.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_lidar_rationale_1",
+      "target": "component_a_perception_lidar",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/lidar.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_lidar_rationale_33",
+      "target": "component_a_perception_lidar_lidarsimulator",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/lidar.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_lidar_rationale_46",
+      "target": "component_a_perception_lidar_lidarsimulator_scan",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/lidar.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_run_perception",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/run_perception.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_run_perception",
+      "target": "cv2",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/run_perception.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_run_perception",
+      "target": "matplotlib_pyplot",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/run_perception.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_run_perception",
+      "target": "numpy",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/run_perception.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_run_perception",
+      "target": "common_environment",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/run_perception.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_run_perception",
+      "target": "component_a_perception_camera",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/run_perception.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_run_perception",
+      "target": "component_a_perception_fusion",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/run_perception.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_run_perception",
+      "target": "component_a_perception_lidar",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/run_perception.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_run_perception",
+      "target": "component_a_perception_run_perception_robot_to_world_detections",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/run_perception.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_run_perception_robot_to_world_detections",
+      "target": "component_a_perception_camera_camerasimulator",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/run_perception.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_run_perception",
+      "target": "component_a_perception_run_perception_main",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/run_perception.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_run_perception_main",
+      "target": "component_a_perception_camera_camerasimulator",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/run_perception.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_run_perception_main",
+      "target": "component_a_perception_run_perception_robot_to_world_detections",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/run_perception.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_run_perception_rationale_1",
+      "target": "component_a_perception_run_perception",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/run_perception.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_run_perception_rationale_33",
+      "target": "component_a_perception_run_perception_robot_to_world_detections",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/run_perception.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_autonomous_systems_robotics_700",
+      "target": "pkg_matplotlib",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pyproject.toml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_autonomous_systems_robotics_700",
+      "target": "pkg_numpy",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pyproject.toml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_autonomous_systems_robotics_700",
+      "target": "pkg_opencv_python",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pyproject.toml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_autonomous_systems_robotics_700",
+      "target": "pkg_plotly",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pyproject.toml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_autonomous_systems_robotics_700",
+      "target": "pkg_scikit_learn",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pyproject.toml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_autonomous_systems_robotics_700",
+      "target": "pkg_seaborn",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pyproject.toml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "results_a1_sensor_summary",
+      "target": "results_a1_sensor_summary_component_a1_perception_pipeline_metrics",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "results/a1_sensor_summary.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_camera",
+      "target": "common_environment_gridworld",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/camera.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_fusion",
+      "target": "common_environment_gridworld",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/fusion.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_lidar",
+      "target": "common_environment_gridworld",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/lidar.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_run_perception",
+      "target": "common_environment_gridworld",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/run_perception.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_run_perception",
+      "target": "common_environment_make_assignment_arena",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/run_perception.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_run_perception",
+      "target": "component_a_perception_camera_camerasimulator",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/run_perception.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_run_perception",
+      "target": "component_a_perception_camera_detect_features",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/run_perception.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_run_perception",
+      "target": "component_a_perception_fusion_occupancygridfusion",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/run_perception.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_run_perception",
+      "target": "component_a_perception_lidar_lidarsimulator",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/run_perception.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_run_perception_main",
+      "target": "common_environment_make_assignment_arena",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/run_perception.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_run_perception_main",
+      "target": "component_a_perception_lidar_lidarsimulator",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/run_perception.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_run_perception_main",
+      "target": "component_a_perception_camera_detect_features",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/run_perception.py",
+      "source_location": "L50",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_run_perception_main",
+      "target": "component_a_perception_fusion_occupancygridfusion",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "component_a/perception/run_perception.py",
+      "source_location": "L54",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_camera_camerasimulator",
+      "target": "common_environment_gridworld",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "component_a/perception/camera.py",
+      "source_location": "L43",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_fusion_occupancygridfusion",
+      "target": "common_environment_gridworld",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "component_a/perception/fusion.py",
+      "source_location": "L44",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_lidar_lidarsimulator",
+      "target": "common_environment_gridworld",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "component_a/perception/lidar.py",
+      "source_location": "L35",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_run_perception_main",
+      "target": "common_environment_gridworld",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "component_a/perception/run_perception.py",
+      "source_location": "L41",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_run_perception_robot_to_world_detections",
+      "target": "component_a_perception_camera_camerasimulator",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "component_a/perception/run_perception.py",
+      "source_location": "L29",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_run_perception_main",
+      "target": "component_a_perception_camera_camerasimulator",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "component_a/perception/run_perception.py",
+      "source_location": "L48",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_run_perception_main",
+      "target": "component_a_perception_fusion_occupancygridfusion",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "component_a/perception/run_perception.py",
+      "source_location": "L54",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_a_perception_run_perception_main",
+      "target": "component_a_perception_lidar_lidarsimulator",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "component_a/perception/run_perception.py",
+      "source_location": "L45",
+      "weight": 0.8,
+      "_origin": "ast"
+    }
+  ],
+  "directed": false
+}

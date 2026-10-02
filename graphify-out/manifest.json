@@ -1,0 +1,134 @@
+{
+  "common/__init__.py": {
+    "mtime": 1790903460.856185,
+    "seen": 1790907709.5861278,
+    "ast_hash": "51b80b43ae21c28b9464b6d11ed0230c",
+    "semantic_hash": "51b80b43ae21c28b9464b6d11ed0230c"
+  },
+  "component_a/__init__.py": {
+    "mtime": 1790903588.062,
+    "seen": 1790907709.5861387,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "component_a/control/__init__.py": {
+    "mtime": 1790903588.088,
+    "seen": 1790907709.5861416,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "component_a/integration/__init__.py": {
+    "mtime": 1790903588.089,
+    "seen": 1790907709.586144,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "component_a/perception/__init__.py": {
+    "mtime": 1790903588.086,
+    "seen": 1790907709.5861459,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "component_a/planning/__init__.py": {
+    "mtime": 1790903588.088,
+    "seen": 1790907709.5861535,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "component_b/__init__.py": {
+    "mtime": 1790903588.089,
+    "seen": 1790907709.5861561,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "component_b/consensus/__init__.py": {
+    "mtime": 1790903588.09,
+    "seen": 1790907709.5861578,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "component_b/ml/__init__.py": {
+    "mtime": 1790903588.091,
+    "seen": 1790907709.58616,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "component_b/swarm/__init__.py": {
+    "mtime": 1790903588.09,
+    "seen": 1790907709.5861638,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "pyproject.toml": {
+    "mtime": 1790903025.389619,
+    "seen": 1790907709.5861669,
+    "ast_hash": "bd24c13c81c6e00e200354b43bdc4387",
+    "semantic_hash": "bd24c13c81c6e00e200354b43bdc4387"
+  },
+  "scripts/__init__.py": {
+    "mtime": 1790903588.094,
+    "seen": 1790907709.5861695,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "common/environment.py": {
+    "mtime": 1790906075.6292021,
+    "seen": 1790907709.5861351,
+    "ast_hash": "23290ae35f68398c646afb2136be9a57",
+    "semantic_hash": ""
+  },
+  "component_a/perception/camera.py": {
+    "mtime": 1790906388.4860544,
+    "seen": 1790907709.5861473,
+    "ast_hash": "d8c1f8bd0a060e100610795d33625735",
+    "semantic_hash": ""
+  },
+  "component_a/perception/fusion.py": {
+    "mtime": 1790906620.9251225,
+    "seen": 1790907709.5861492,
+    "ast_hash": "093ff5b45be16d947247bfd0425aaab1",
+    "semantic_hash": ""
+  },
+  "component_a/perception/lidar.py": {
+    "mtime": 1790906388.4860544,
+    "seen": 1790907709.5861506,
+    "ast_hash": "694e329dc4ad61602df45b1c2d731ce3",
+    "semantic_hash": ""
+  },
+  "component_a/perception/run_perception.py": {
+    "mtime": 1790906875.8484445,
+    "seen": 1790907709.5861516,
+    "ast_hash": "b1b74ebf64d64190945c0af8362e0a46",
+    "semantic_hash": ""
+  },
+  "assignment.txt": {
+    "mtime": 1790881534.5238066,
+    "seen": 1790907709.586174,
+    "ast_hash": "dc85ddf6f7356acb27f47b8ecfe1473f",
+    "semantic_hash": ""
+  },
+  "results/a1_sensor_summary.md": {
+    "mtime": 1790907053.370018,
+    "seen": 1790907709.586177,
+    "ast_hash": "c014a714107374b9d66cfbfd2dfbe02e",
+    "semantic_hash": ""
+  },
+  "assignment.pdf": {
+    "mtime": 1790884683.0602655,
+    "seen": 1790907709.5861785,
+    "ast_hash": "b13d0a9368e33f196aaefb794ad162da",
+    "semantic_hash": ""
+  },
+  "plots/a1_camera_frame.png": {
+    "mtime": 1790907053.3690207,
+    "seen": 1790907709.5861802,
+    "ast_hash": "a1f6fa68826f4aac3ba112735f4e78d0",
+    "semantic_hash": ""
+  },
+  "plots/a1_perception_pipeline.png": {
+    "mtime": 1790907053.3058803,
+    "seen": 1790907709.5861814,
+    "ast_hash": "9d4ccf115023cdc4d5c9450ff6690665",
+    "semantic_hash": ""
+  }
+}
