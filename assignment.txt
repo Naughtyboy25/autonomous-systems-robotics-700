@@ -1,0 +1,61 @@
+Autonomous Systems and Robotics 700 Assignment
+
+QUESTION
+
+EXAMINER MARKS
+
+MODERATOR MARKS
+
+REMARKS
+
+ASSIGNMENT INSTRUCTIONS
+Please tick each box to confirm completion. Use Times New Roman font, size 12, with 1.5 line spacing throughout the document. Apply Harvard Referencing Style for all citations and references.
+For essay-style assignments, please include the following sections: Table of Contents Introduction Main Body (with relevant subheadings) Conclusion References
+Submit the assignment in PDF format on Moodle.
+Use the specified cover page provided. Include a signed declaration of originality.
+
+DECLARATION OF ORIGINALITY:
+
+I hereby declare that this assignment is my own work and has not been copied from any other source except where due acknowledgment is made. I affirm that all sources used have been properly cited and that this submission complies with the institution's policies on academic integrity and plagiarism.
+
+Student Signature:
+
+Date:
+
+Richfield Graduate Institute of Technology (Pty) Ltd is registered with the Department of Higher Education & Training as a Private Higher Education Institution under the Higher Education Act, 1997, Registration Certificate No. 2000/HE07/008.
+
+AUTONOMOUS SYSTEMS AND ROBOTICS 700: ASSIGNMENT INSTRUCTIONS
+Intelligent Autonomous Robotic Systems Project You are appointed as a Robotics and Autonomous Systems Engineer tasked with designing, simulating, and evaluating two integrated intelligent robotic systems. The objective of this project is to demonstrate your ability to integrate sensor perception, motion planning, control theory, multi-agent coordination, and machine learning into fully functional, reproducible autonomous systems, while critically reflecting on the ethical implications of deploying such systems in the real world.
+You are required to complete both components described below as part of one comprehensive project submission.
+This assignment assesses:
+· Sensor simulation and perception pipeline design · Motion planning and pathfinding algorithms · Control system design and tuning · Multi-agent and swarm robotics simulation · Machine learning for robotic navigation and decision-making · Ethical reasoning in autonomous systems · Reproducible research and simulation practices
+MANDATORY SOFTWARE PLATFORM All simulation, robot modelling, and visualisation work in this assignment must be completed using Webots and/or Matplotlib and other Python libraries such as plotly and seaborn only. ROS and Gazebo may NOT be used to complete this assignment. Use Webots for robot modelling, sensor simulation (LiDAR/camera), multi-robot/swarm simulation, and controller execution. Use Matplotlib for all graphs, plots, maps, trajectories, confusion matrices, and performance visualisations. This requirement ensures a consistent, reproducible setup across all student devices, including Windows 11 machines, without
+
+requiring dual-boot, virtual machines, or WSL. Submissions built around ROS/Gazebo will not be marked. COMPONENT A (50 Marks)
+Perception, Motion Planning and Control for an Autonomous Mobile Robot Using Webots to model and simulate the mobile robot and its environment, and Matplotlib or seaborn to produce all required plots and visualisations, design and implement a hybrid intelligent system that enables a mobile robot to perceive its environment, plan an optimal path, and execute that path under closed-loop control. ROS/Gazebo implementations will not be accepted for this component. System Requirements Your system must include the following:
+1. Sensor Simulation and Perception Pipeline (10 Marks) · Simulate or source sensor data (e.g., LiDAR range scans and/or camera images) for the robot's operating environment. · Apply image processing techniques (e.g., using OpenCV) to detect obstacles, landmarks, or features in the environment. · Implement sensor fusion to combine at least two sensor modalities (e.g., LiDAR and camera) into a unified environment representation. · Justify all preprocessing and sensor fusion design decisions.
+2. Motion Planning and Pathfinding (15 Marks) · Represent the robot's environment as a graph or occupancy grid suitable for path planning. · Implement Dijkstra's Algorithm to compute a shortest path between a defined start and goal position. · Implement the A* Algorithm using an appropriate heuristic (e.g., Euclidean or Manhattan distance) for the same environment.
+
+· Compare the two algorithms in terms of computational efficiency, path optimality, and nodes explored.
+· Visualise and interpret the generated paths on the map/grid.
+3. Control System Design (15 Marks) · Derive or define a kinematic (and, where applicable, dynamic) model for the robot. · Design a PID controller to enable the robot to track the planned path. · Tune the PID gains (Kp, Ki, Kd) and demonstrate the effect of tuning on system response (overshoot, rise time, settling time, steady-state error). · Present response curves (e.g., position/heading error over time) and critically discuss controller stability and performance.
+4. System Integration and Evaluation (10 Marks) · Integrate the perception pipeline, path planner, and PID controller into a single closed-loop autonomous navigation system. · Provide:  A trajectory plot comparing planned vs actual path  A performance evaluation table (e.g., path length, time-to-goal, tracking error) · Critically analyse the trade-offs between perception accuracy, planning optimality, and control responsiveness. · Discuss the practical and ethical implications of deploying autonomous navigation in shared human environments.
+
+COMPONENT B (50 Marks)
+Multi-Agent Robotic Swarm System with Learning-Based Decision-Making Using Webots to configure and simulate a multi-robot environment, and Matplotlib to visualise agent behaviour, convergence, and performance results, design and implement a multi-agent robotic system for a cooperative task (e.g., distributed area coverage, cooperative search-and-rescue, or warehouse task allocation). ROS/Gazebo implementations will not be accepted for this component.
+1. Multi-Agent Simulation Setup (10 Marks) · Configure a Webots multi-robot simulation environment (world file/controllers) with at least three autonomous agents. · Define agent roles, communication topology, and the cooperative task objective. · Justify the environment design and controller structure chosen in Webots.
+2. Consensus and Swarm Intelligence Algorithms (10 Marks) · Implement a consensus algorithm (e.g., average consensus or leader-election) to coordinate agent states or decisions. · Implement a swarm intelligence algorithm (e.g., Particle Swarm Optimisation or Ant Colony Optimisation) for distributed task allocation or coverage. · Demonstrate emergent group behaviour and evaluate convergence.
+3. Machine Learning for Robotic Navigation and Decision-Making (10 Marks) · Train a neural network to support robot navigation and/or decision-making (e.g., obstacle avoidance, action selection). · Evaluate the model using appropriate performance metrics (e.g., accuracy, success rate, average reward). · Present and interpret a confusion matrix or performance curve as appropriate. · Compare centralised versus distributed decision-making approaches for the multi-agent system.
+
+4. Ethics, Risk, and Responsible Autonomy (20 Marks) Provide a critical discussion addressing:
+· Bias and reliability risks in sensor data, simulation assumptions, and learned models. · Transparency and explainability challenges in neural-network-based robotic decision-making. · Risks associated with autonomous decision-making in safety-critical or human-shared
+environments. · Fault tolerance, robustness, and failure-mode mitigation strategies for multi-agent systems. · Responsible AI and robotics deployment considerations within the South African context. Required Deliverables Students must submit a single zipped project folder (maximum size: 50MB) containing ALL of the following:
+1. Simulation/Code Package (Webots project folder + Python/.ipynb scripts using Matplotlib) · Complete implementation of both systems using Webots and Matplotlib only. · Must run/execute from start to finish without errors. · Include clear section headings aligned to the assignment structure. · Include code, simulation outputs, Matplotlib visualisations, and markdown/comment explanations.
+2. Professional PDF Report (3­9 pages) · Introduction · Methodology · Results and Evaluation · Discussion and Ethical Considerations · Conclusion and Recommendations
+3. Simulation Environment / Dataset · Include the Webots world/map files, sensor data, or pre-processed dataset used.
+4. README.txt · Instructions for running the Webots simulation and Python/Matplotlib scripts
+
+· Webots version and Python version used · List of Python dependencies (e.g., matplotlib, numpy) · Expected runtime · Hardware requirements (if applicable) Submissions containing incomplete components will not be awarded marks.
+END OF ASSIGNMENT!!!
+
+
