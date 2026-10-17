@@ -1,0 +1,2255 @@
+{
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "failed_sources": [],
+  "nodes": [
+    {
+      "id": "common_init",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "common/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "common_init_rationale_1",
+      "label": "Shared utilities for the ASR700 assignment project.",
+      "file_type": "rationale",
+      "source_file": "common/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment",
+      "label": "environment.py",
+      "file_type": "code",
+      "source_file": "common/environment.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_gridworld",
+      "label": "GridWorld",
+      "file_type": "code",
+      "source_file": "common/environment.py",
+      "source_location": "L32",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_gridworld_post_init",
+      "label": ".__post_init__()",
+      "file_type": "code",
+      "source_file": "common/environment.py",
+      "source_location": "L41",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_gridworld_add_border_walls",
+      "label": ".add_border_walls()",
+      "file_type": "code",
+      "source_file": "common/environment.py",
+      "source_location": "L49",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_gridworld_add_rect",
+      "label": ".add_rect()",
+      "file_type": "code",
+      "source_file": "common/environment.py",
+      "source_location": "L57",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_gridworld_add_circle",
+      "label": ".add_circle()",
+      "file_type": "code",
+      "source_file": "common/environment.py",
+      "source_location": "L65",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_gridworld_add_landmark",
+      "label": ".add_landmark()",
+      "file_type": "code",
+      "source_file": "common/environment.py",
+      "source_location": "L73",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_gridworld_world_to_grid",
+      "label": ".world_to_grid()",
+      "file_type": "code",
+      "source_file": "common/environment.py",
+      "source_location": "L80",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_gridworld_grid_to_world",
+      "label": ".grid_to_world()",
+      "file_type": "code",
+      "source_file": "common/environment.py",
+      "source_location": "L85",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_gridworld_in_bounds",
+      "label": ".in_bounds()",
+      "file_type": "code",
+      "source_file": "common/environment.py",
+      "source_location": "L88",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_gridworld_is_free",
+      "label": ".is_free()",
+      "file_type": "code",
+      "source_file": "common/environment.py",
+      "source_location": "L91",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_gridworld_is_free_world",
+      "label": ".is_free_world()",
+      "file_type": "code",
+      "source_file": "common/environment.py",
+      "source_location": "L94",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_gridworld_ray_cast",
+      "label": ".ray_cast()",
+      "file_type": "code",
+      "source_file": "common/environment.py",
+      "source_location": "L100",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_make_assignment_arena",
+      "label": "make_assignment_arena()",
+      "file_type": "code",
+      "source_file": "common/environment.py",
+      "source_location": "L123",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_rationale_1",
+      "label": "Shared 2-D occupancy-grid world model for the ASR700 assignment. This module is…",
+      "file_type": "rationale",
+      "source_file": "common/environment.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_rationale_33",
+      "label": "A rectangular 2-D occupancy grid with metric extents.",
+      "file_type": "rationale",
+      "source_file": "common/environment.py",
+      "source_location": "L33",
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_rationale_50",
+      "label": "Add a wall ring around the arena (required for ray-casting).",
+      "file_type": "rationale",
+      "source_file": "common/environment.py",
+      "source_location": "L50",
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_rationale_58",
+      "label": "Add an axis-aligned rectangular obstacle (metric corners).",
+      "file_type": "rationale",
+      "source_file": "common/environment.py",
+      "source_location": "L58",
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_rationale_66",
+      "label": "Add a circular obstacle (represents e.g. a pillar or a barrel).",
+      "file_type": "rationale",
+      "source_file": "common/environment.py",
+      "source_location": "L66",
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_rationale_74",
+      "label": "Register a visual landmark (used by the camera simulator only).",
+      "file_type": "rationale",
+      "source_file": "common/environment.py",
+      "source_location": "L74",
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_rationale_101",
+      "label": "March along a ray and return the distance to the first obstacle. A fine step of…",
+      "file_type": "rationale",
+      "source_file": "common/environment.py",
+      "source_location": "L101",
+      "_origin": "ast"
+    },
+    {
+      "id": "common_environment_rationale_124",
+      "label": "Build the deterministic 20 m x 20 m arena used throughout Component A. Layout:…",
+      "file_type": "rationale",
+      "source_file": "common/environment.py",
+      "source_location": "L124",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_init",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "component_a/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_control_init",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "component_a/control/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_integration_init",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "component_a/integration/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_perception_init",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "component_a/perception/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_a_planning_init",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "component_a/planning/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_init",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "component_b/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_consensus_init",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "component_b/consensus/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_ml_init",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "component_b/ml/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_swarm_init",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "component_b/swarm/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_swarm_agent",
+      "label": "agent.py",
+      "file_type": "code",
+      "source_file": "component_b/swarm/agent.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_swarm_agent_swarmagent",
+      "label": "SwarmAgent",
+      "file_type": "code",
+      "source_file": "component_b/swarm/agent.py",
+      "source_location": "L29",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_swarm_agent_swarmagent_post_init",
+      "label": ".__post_init__()",
+      "file_type": "code",
+      "source_file": "component_b/swarm/agent.py",
+      "source_location": "L40",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_swarm_agent_swarmagent_attach",
+      "label": ".attach()",
+      "file_type": "code",
+      "source_file": "component_b/swarm/agent.py",
+      "source_location": "L44",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_swarm_agent_swarmagent_step_towards",
+      "label": ".step_towards()",
+      "file_type": "code",
+      "source_file": "component_b/swarm/agent.py",
+      "source_location": "L48",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_swarm_agent_swarmagent_at_target",
+      "label": ".at_target()",
+      "file_type": "code",
+      "source_file": "component_b/swarm/agent.py",
+      "source_location": "L75",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_swarm_agent_rationale_1",
+      "label": "Swarm agent: kinematics, sensing footprint and belief state (Component B1).…",
+      "file_type": "rationale",
+      "source_file": "component_b/swarm/agent.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_swarm_agent_rationale_49",
+      "label": "Move one dt towards the current waypoint with obstacle probing.",
+      "file_type": "rationale",
+      "source_file": "component_b/swarm/agent.py",
+      "source_location": "L49",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_swarm_communication",
+      "label": "communication.py",
+      "file_type": "code",
+      "source_file": "component_b/swarm/communication.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_swarm_communication_communicationnetwork",
+      "label": "CommunicationNetwork",
+      "file_type": "code",
+      "source_file": "component_b/swarm/communication.py",
+      "source_location": "L29",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_swarm_communication_communicationnetwork_adjacency",
+      "label": ".adjacency()",
+      "file_type": "code",
+      "source_file": "component_b/swarm/communication.py",
+      "source_location": "L32",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_swarm_communication_py_ndarray",
+      "label": "ndarray",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_swarm_communication_communicationnetwork_n_edges",
+      "label": ".n_edges()",
+      "file_type": "code",
+      "source_file": "component_b/swarm/communication.py",
+      "source_location": "L41",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_swarm_communication_communicationnetwork_n_components",
+      "label": ".n_components()",
+      "file_type": "code",
+      "source_file": "component_b/swarm/communication.py",
+      "source_location": "L44",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_swarm_communication_communicationnetwork_gossip",
+      "label": ".gossip()",
+      "file_type": "code",
+      "source_file": "component_b/swarm/communication.py",
+      "source_location": "L61",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_swarm_communication_rationale_1",
+      "label": "Distance-limited communication network for the swarm (Component B1). Topology…",
+      "file_type": "rationale",
+      "source_file": "component_b/swarm/communication.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_swarm_communication_rationale_33",
+      "label": "Boolean adjacency matrix of the current distance-limited graph.",
+      "file_type": "rationale",
+      "source_file": "component_b/swarm/communication.py",
+      "source_location": "L33",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_swarm_communication_rationale_45",
+      "label": "Connected-component count (union-find, tiny n).",
+      "file_type": "rationale",
+      "source_file": "component_b/swarm/communication.py",
+      "source_location": "L45",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_swarm_communication_rationale_62",
+      "label": "Merge coverage beliefs across every active edge; return # merges.",
+      "file_type": "rationale",
+      "source_file": "component_b/swarm/communication.py",
+      "source_location": "L62",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_swarm_environment",
+      "label": "environment.py",
+      "file_type": "code",
+      "source_file": "component_b/swarm/environment.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_swarm_environment_make_swarm_arena",
+      "label": "make_swarm_arena()",
+      "file_type": "code",
+      "source_file": "component_b/swarm/environment.py",
+      "source_location": "L31",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_swarm_environment_swarmenvironment",
+      "label": "SwarmEnvironment",
+      "file_type": "code",
+      "source_file": "component_b/swarm/environment.py",
+      "source_location": "L55",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_swarm_environment_swarmenvironment_post_init",
+      "label": ".__post_init__()",
+      "file_type": "code",
+      "source_file": "component_b/swarm/environment.py",
+      "source_location": "L62",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_swarm_environment_swarmenvironment_stamp_coverage",
+      "label": ".stamp_coverage()",
+      "file_type": "code",
+      "source_file": "component_b/swarm/environment.py",
+      "source_location": "L72",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_swarm_environment_py_ndarray",
+      "label": "ndarray",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_swarm_environment_swarmenvironment_sample_free_waypoint",
+      "label": ".sample_free_waypoint()",
+      "file_type": "code",
+      "source_file": "component_b/swarm/environment.py",
+      "source_location": "L86",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_swarm_environment_swarmenvironment_coverage_fraction",
+      "label": ".coverage_fraction()",
+      "file_type": "code",
+      "source_file": "component_b/swarm/environment.py",
+      "source_location": "L94",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_swarm_environment_rationale_1",
+      "label": "Swarm arena environment for Component B (multi-agent coverage task). A 30 m x…",
+      "file_type": "rationale",
+      "source_file": "component_b/swarm/environment.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_swarm_environment_rationale_32",
+      "label": "30 m x 30 m arena with border walls and sparse interior obstacles.",
+      "file_type": "rationale",
+      "source_file": "component_b/swarm/environment.py",
+      "source_location": "L32",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_swarm_environment_rationale_56",
+      "label": "World + ground-truth coverage bookkeeping for the swarm.",
+      "file_type": "rationale",
+      "source_file": "component_b/swarm/environment.py",
+      "source_location": "L56",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_swarm_environment_rationale_73",
+      "label": "OR the agent's sensing disc into ``belief`` (truth or agent belief).",
+      "file_type": "rationale",
+      "source_file": "component_b/swarm/environment.py",
+      "source_location": "L73",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_swarm_environment_rationale_87",
+      "label": "Uniform random FREE cell centre (baseline wandering target).",
+      "file_type": "rationale",
+      "source_file": "component_b/swarm/environment.py",
+      "source_location": "L87",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_swarm_run_swarm_setup",
+      "label": "run_swarm_setup.py",
+      "file_type": "code",
+      "source_file": "component_b/swarm/run_swarm_setup.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_swarm_run_swarm_setup_build_swarm",
+      "label": "build_swarm()",
+      "file_type": "code",
+      "source_file": "component_b/swarm/run_swarm_setup.py",
+      "source_location": "L36",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_swarm_run_swarm_setup_main",
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "component_b/swarm/run_swarm_setup.py",
+      "source_location": "L46",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_swarm_run_swarm_setup_rationale_1",
+      "label": "Component B1 driver: multi-agent simulation setup + baseline behaviour. Defines…",
+      "file_type": "rationale",
+      "source_file": "component_b/swarm/run_swarm_setup.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "pkg_autonomous_systems_robotics_700",
+      "label": "autonomous-systems-robotics-700",
+      "file_type": "code",
+      "type": "package",
+      "ecosystem": "python",
+      "source_file": "pyproject.toml",
+      "source_location": "L1",
+      "version": "0.1.0",
+      "_origin": "ast"
+    },
+    {
+      "id": "scripts_init",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "scripts/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "webots_controllers_swarm_controller_swarm_controller",
+      "label": "swarm_controller.py",
+      "file_type": "code",
+      "source_file": "webots/controllers/swarm_controller/swarm_controller.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "webots_controllers_swarm_controller_swarm_controller_swarmcontroller",
+      "label": "SwarmController",
+      "file_type": "code",
+      "source_file": "webots/controllers/swarm_controller/swarm_controller.py",
+      "source_location": "L47",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "webots_controllers_swarm_controller_swarm_controller_swarmcontroller_init",
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "webots/controllers/swarm_controller/swarm_controller.py",
+      "source_location": "L48",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "webots_controllers_swarm_controller_swarm_controller_swarmcontroller_read_pose",
+      "label": ".read_pose()",
+      "file_type": "code",
+      "source_file": "webots/controllers/swarm_controller/swarm_controller.py",
+      "source_location": "L82",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "webots_controllers_swarm_controller_swarm_controller_swarmcontroller_sample_waypoint",
+      "label": ".sample_waypoint()",
+      "file_type": "code",
+      "source_file": "webots/controllers/swarm_controller/swarm_controller.py",
+      "source_location": "L88",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "webots_controllers_swarm_controller_swarm_controller_swarmcontroller_front_clearance",
+      "label": ".front_clearance()",
+      "file_type": "code",
+      "source_file": "webots/controllers/swarm_controller/swarm_controller.py",
+      "source_location": "L91",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "webots_controllers_swarm_controller_swarm_controller_swarmcontroller_drive",
+      "label": ".drive()",
+      "file_type": "code",
+      "source_file": "webots/controllers/swarm_controller/swarm_controller.py",
+      "source_location": "L105",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "webots_controllers_swarm_controller_swarm_controller_swarmcontroller_sense",
+      "label": ".sense()",
+      "file_type": "code",
+      "source_file": "webots/controllers/swarm_controller/swarm_controller.py",
+      "source_location": "L124",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "webots_controllers_swarm_controller_swarm_controller_swarmcontroller_gossip",
+      "label": ".gossip()",
+      "file_type": "code",
+      "source_file": "webots/controllers/swarm_controller/swarm_controller.py",
+      "source_location": "L127",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "webots_controllers_swarm_controller_swarm_controller_swarmcontroller_run",
+      "label": ".run()",
+      "file_type": "code",
+      "source_file": "webots/controllers/swarm_controller/swarm_controller.py",
+      "source_location": "L143",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "webots_controllers_swarm_controller_swarm_controller_rationale_1",
+      "label": "Webots swarm controller (Component B1 baseline behaviour). One identical…",
+      "file_type": "rationale",
+      "source_file": "webots/controllers/swarm_controller/swarm_controller.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "webots_controllers_swarm_controller_swarm_controller_rationale_92",
+      "label": "Min LiDAR range in +-20 deg of heading, and its sign bias.",
+      "file_type": "rationale",
+      "source_file": "webots/controllers/swarm_controller/swarm_controller.py",
+      "source_location": "L92",
+      "_origin": "ast"
+    },
+    {
+      "id": "results_b1_swarm_setup",
+      "label": "b1_swarm_setup.md",
+      "file_type": "document",
+      "source_file": "results/b1_swarm_setup.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "results_b1_swarm_setup_component_b1_multi_agent_simulation_setup",
+      "label": "Component B1 - Multi-agent simulation setup",
+      "file_type": "document",
+      "source_file": "results/b1_swarm_setup.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "results_b1_swarm_setup_agents_and_roles",
+      "label": "Agents and roles",
+      "file_type": "document",
+      "source_file": "results/b1_swarm_setup.md",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "results_b1_swarm_setup_communication_topology",
+      "label": "Communication topology",
+      "file_type": "document",
+      "source_file": "results/b1_swarm_setup.md",
+      "source_location": "L15",
+      "_origin": "ast"
+    },
+    {
+      "id": "results_b1_swarm_setup_cooperative_task_objective",
+      "label": "Cooperative task objective",
+      "file_type": "document",
+      "source_file": "results/b1_swarm_setup.md",
+      "source_location": "L23",
+      "_origin": "ast"
+    },
+    {
+      "id": "results_b1_swarm_setup_environment_and_controller_design_justification",
+      "label": "Environment and controller design justification",
+      "file_type": "document",
+      "source_file": "results/b1_swarm_setup.md",
+      "source_location": "L30",
+      "_origin": "ast"
+    }
+  ],
+  "links": [
+    {
+      "source": "common_init_rationale_1",
+      "target": "common_init",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "common/__init__.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment",
+      "target": "dataclasses",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment",
+      "target": "numpy",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment",
+      "target": "common_environment_gridworld",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld",
+      "target": "common_environment_gridworld_post_init",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld",
+      "target": "common_environment_gridworld_add_border_walls",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld",
+      "target": "common_environment_gridworld_add_rect",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L57",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld",
+      "target": "common_environment_gridworld_add_circle",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L65",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld",
+      "target": "common_environment_gridworld_add_landmark",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld",
+      "target": "common_environment_gridworld_world_to_grid",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L80",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld",
+      "target": "common_environment_gridworld_grid_to_world",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L85",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld",
+      "target": "common_environment_gridworld_in_bounds",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L88",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld",
+      "target": "common_environment_gridworld_is_free",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L91",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld",
+      "target": "common_environment_gridworld_is_free_world",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L94",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld",
+      "target": "common_environment_gridworld_ray_cast",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L100",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment",
+      "target": "common_environment_make_assignment_arena",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L123",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_make_assignment_arena",
+      "target": "common_environment_gridworld",
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L123",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld_add_rect",
+      "target": "common_environment_gridworld_world_to_grid",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L59",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld_is_free",
+      "target": "common_environment_gridworld_in_bounds",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L92",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld_is_free_world",
+      "target": "common_environment_gridworld_is_free",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L95",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld_is_free_world",
+      "target": "common_environment_gridworld_world_to_grid",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L95",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld_ray_cast",
+      "target": "common_environment_gridworld_world_to_grid",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L114",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_gridworld_ray_cast",
+      "target": "common_environment_gridworld_in_bounds",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L115",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_make_assignment_arena",
+      "target": "common_environment_gridworld",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L133",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_rationale_1",
+      "target": "common_environment",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_rationale_33",
+      "target": "common_environment_gridworld",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_rationale_50",
+      "target": "common_environment_gridworld_add_border_walls",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L50",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_rationale_58",
+      "target": "common_environment_gridworld_add_rect",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L58",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_rationale_66",
+      "target": "common_environment_gridworld_add_circle",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L66",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_rationale_74",
+      "target": "common_environment_gridworld_add_landmark",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L74",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_rationale_101",
+      "target": "common_environment_gridworld_ray_cast",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L101",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "common_environment_rationale_124",
+      "target": "common_environment_make_assignment_arena",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "common/environment.py",
+      "source_location": "L124",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_agent",
+      "target": "dataclasses",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/agent.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_agent",
+      "target": "numpy",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/agent.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_agent",
+      "target": "component_b_swarm_environment",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/agent.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_agent",
+      "target": "component_b_swarm_agent_swarmagent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/agent.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_agent_swarmagent",
+      "target": "component_b_swarm_agent_swarmagent_post_init",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/agent.py",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_agent_swarmagent",
+      "target": "component_b_swarm_agent_swarmagent_attach",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/agent.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_agent_swarmagent_attach",
+      "target": "component_b_swarm_environment_swarmenvironment",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/agent.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_agent_swarmagent",
+      "target": "component_b_swarm_agent_swarmagent_step_towards",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/agent.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_agent_swarmagent_step_towards",
+      "target": "component_b_swarm_environment_swarmenvironment",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/agent.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_agent_swarmagent",
+      "target": "component_b_swarm_agent_swarmagent_at_target",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/agent.py",
+      "source_location": "L75",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_agent_rationale_1",
+      "target": "component_b_swarm_agent",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/agent.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_agent_rationale_49",
+      "target": "component_b_swarm_agent_swarmagent_step_towards",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/agent.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_communication",
+      "target": "dataclasses",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/communication.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_communication",
+      "target": "numpy",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/communication.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_communication",
+      "target": "component_b_swarm_agent",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/communication.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_communication",
+      "target": "component_b_swarm_communication_communicationnetwork",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/communication.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_communication_communicationnetwork",
+      "target": "component_b_swarm_communication_communicationnetwork_adjacency",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/communication.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_communication_communicationnetwork_adjacency",
+      "target": "component_b_swarm_agent_swarmagent",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/communication.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_communication_communicationnetwork_adjacency",
+      "target": "component_b_swarm_communication_py_ndarray",
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/communication.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_communication_communicationnetwork",
+      "target": "component_b_swarm_communication_communicationnetwork_n_edges",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/communication.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_communication_communicationnetwork_n_edges",
+      "target": "component_b_swarm_communication_py_ndarray",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/communication.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_communication_communicationnetwork",
+      "target": "component_b_swarm_communication_communicationnetwork_n_components",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/communication.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_communication_communicationnetwork_n_components",
+      "target": "component_b_swarm_communication_py_ndarray",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/communication.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_communication_communicationnetwork",
+      "target": "component_b_swarm_communication_communicationnetwork_gossip",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/communication.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_communication_communicationnetwork_gossip",
+      "target": "component_b_swarm_agent_swarmagent",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/communication.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_communication_communicationnetwork_gossip",
+      "target": "component_b_swarm_communication_py_ndarray",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/communication.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_communication_rationale_1",
+      "target": "component_b_swarm_communication",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/communication.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_communication_rationale_33",
+      "target": "component_b_swarm_communication_communicationnetwork_adjacency",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/communication.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_communication_rationale_45",
+      "target": "component_b_swarm_communication_communicationnetwork_n_components",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/communication.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_communication_rationale_62",
+      "target": "component_b_swarm_communication_communicationnetwork_gossip",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/communication.py",
+      "source_location": "L62",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_environment",
+      "target": "dataclasses",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/environment.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_environment",
+      "target": "numpy",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/environment.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_environment",
+      "target": "common_environment",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/environment.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_environment",
+      "target": "component_b_swarm_environment_make_swarm_arena",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/environment.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_environment_make_swarm_arena",
+      "target": "common_environment_gridworld",
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/environment.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_environment",
+      "target": "component_b_swarm_environment_swarmenvironment",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/environment.py",
+      "source_location": "L55",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_environment_swarmenvironment",
+      "target": "component_b_swarm_environment_swarmenvironment_post_init",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/environment.py",
+      "source_location": "L62",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_environment_swarmenvironment",
+      "target": "component_b_swarm_environment_swarmenvironment_stamp_coverage",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/environment.py",
+      "source_location": "L72",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_environment_swarmenvironment_stamp_coverage",
+      "target": "component_b_swarm_environment_py_ndarray",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/environment.py",
+      "source_location": "L72",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_environment_swarmenvironment",
+      "target": "component_b_swarm_environment_swarmenvironment_sample_free_waypoint",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/environment.py",
+      "source_location": "L86",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_environment_swarmenvironment",
+      "target": "component_b_swarm_environment_swarmenvironment_coverage_fraction",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/environment.py",
+      "source_location": "L94",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_environment_swarmenvironment_coverage_fraction",
+      "target": "component_b_swarm_environment_py_ndarray",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/environment.py",
+      "source_location": "L94",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_environment_make_swarm_arena",
+      "target": "common_environment_gridworld",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/environment.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_environment_rationale_1",
+      "target": "component_b_swarm_environment",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/environment.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_environment_rationale_32",
+      "target": "component_b_swarm_environment_make_swarm_arena",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/environment.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_environment_rationale_56",
+      "target": "component_b_swarm_environment_swarmenvironment",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/environment.py",
+      "source_location": "L56",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_environment_rationale_73",
+      "target": "component_b_swarm_environment_swarmenvironment_stamp_coverage",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/environment.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_environment_rationale_87",
+      "target": "component_b_swarm_environment_swarmenvironment_sample_free_waypoint",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/environment.py",
+      "source_location": "L87",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_run_swarm_setup",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/run_swarm_setup.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_run_swarm_setup",
+      "target": "matplotlib_pyplot",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/run_swarm_setup.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_run_swarm_setup",
+      "target": "numpy",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/run_swarm_setup.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_run_swarm_setup",
+      "target": "component_b_swarm_agent",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/run_swarm_setup.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_run_swarm_setup",
+      "target": "component_b_swarm_communication",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/run_swarm_setup.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_run_swarm_setup",
+      "target": "component_b_swarm_environment",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/run_swarm_setup.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_run_swarm_setup",
+      "target": "component_b_swarm_run_swarm_setup_build_swarm",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/run_swarm_setup.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_run_swarm_setup_build_swarm",
+      "target": "component_b_swarm_environment_swarmenvironment",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/run_swarm_setup.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_run_swarm_setup_build_swarm",
+      "target": "component_b_swarm_agent_swarmagent",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/run_swarm_setup.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_run_swarm_setup",
+      "target": "component_b_swarm_run_swarm_setup_main",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/run_swarm_setup.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_run_swarm_setup_build_swarm",
+      "target": "component_b_swarm_agent_swarmagent",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/run_swarm_setup.py",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_run_swarm_setup_main",
+      "target": "component_b_swarm_environment_swarmenvironment",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/run_swarm_setup.py",
+      "source_location": "L50",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_run_swarm_setup_main",
+      "target": "component_b_swarm_run_swarm_setup_build_swarm",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/run_swarm_setup.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_run_swarm_setup_rationale_1",
+      "target": "component_b_swarm_run_swarm_setup",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/run_swarm_setup.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_autonomous_systems_robotics_700",
+      "target": "pkg_matplotlib",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pyproject.toml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_autonomous_systems_robotics_700",
+      "target": "pkg_numpy",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pyproject.toml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_autonomous_systems_robotics_700",
+      "target": "pkg_opencv_python",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pyproject.toml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_autonomous_systems_robotics_700",
+      "target": "pkg_plotly",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pyproject.toml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_autonomous_systems_robotics_700",
+      "target": "pkg_scikit_learn",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pyproject.toml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pkg_autonomous_systems_robotics_700",
+      "target": "pkg_seaborn",
+      "relation": "depends_on",
+      "context": "dependency",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pyproject.toml",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "webots_controllers_swarm_controller_swarm_controller",
+      "target": "os",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "webots/controllers/swarm_controller/swarm_controller.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "webots_controllers_swarm_controller_swarm_controller",
+      "target": "sys",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "webots/controllers/swarm_controller/swarm_controller.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "webots_controllers_swarm_controller_swarm_controller",
+      "target": "numpy",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "webots/controllers/swarm_controller/swarm_controller.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "webots_controllers_swarm_controller_swarm_controller",
+      "target": "controller",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "webots/controllers/swarm_controller/swarm_controller.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "webots_controllers_swarm_controller_swarm_controller",
+      "target": "component_b_swarm_environment",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "webots/controllers/swarm_controller/swarm_controller.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "webots_controllers_swarm_controller_swarm_controller",
+      "target": "webots_controllers_swarm_controller_swarm_controller_swarmcontroller",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "webots/controllers/swarm_controller/swarm_controller.py",
+      "source_location": "L47",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "webots_controllers_swarm_controller_swarm_controller_swarmcontroller",
+      "target": "webots_controllers_swarm_controller_swarm_controller_swarmcontroller_init",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "webots/controllers/swarm_controller/swarm_controller.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "webots_controllers_swarm_controller_swarm_controller_swarmcontroller",
+      "target": "webots_controllers_swarm_controller_swarm_controller_swarmcontroller_read_pose",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "webots/controllers/swarm_controller/swarm_controller.py",
+      "source_location": "L82",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "webots_controllers_swarm_controller_swarm_controller_swarmcontroller",
+      "target": "webots_controllers_swarm_controller_swarm_controller_swarmcontroller_sample_waypoint",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "webots/controllers/swarm_controller/swarm_controller.py",
+      "source_location": "L88",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "webots_controllers_swarm_controller_swarm_controller_swarmcontroller",
+      "target": "webots_controllers_swarm_controller_swarm_controller_swarmcontroller_front_clearance",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "webots/controllers/swarm_controller/swarm_controller.py",
+      "source_location": "L91",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "webots_controllers_swarm_controller_swarm_controller_swarmcontroller",
+      "target": "webots_controllers_swarm_controller_swarm_controller_swarmcontroller_drive",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "webots/controllers/swarm_controller/swarm_controller.py",
+      "source_location": "L105",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "webots_controllers_swarm_controller_swarm_controller_swarmcontroller",
+      "target": "webots_controllers_swarm_controller_swarm_controller_swarmcontroller_sense",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "webots/controllers/swarm_controller/swarm_controller.py",
+      "source_location": "L124",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "webots_controllers_swarm_controller_swarm_controller_swarmcontroller",
+      "target": "webots_controllers_swarm_controller_swarm_controller_swarmcontroller_gossip",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "webots/controllers/swarm_controller/swarm_controller.py",
+      "source_location": "L127",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "webots_controllers_swarm_controller_swarm_controller_swarmcontroller",
+      "target": "webots_controllers_swarm_controller_swarm_controller_swarmcontroller_run",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "webots/controllers/swarm_controller/swarm_controller.py",
+      "source_location": "L143",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "webots_controllers_swarm_controller_swarm_controller_swarmcontroller_drive",
+      "target": "webots_controllers_swarm_controller_swarm_controller_swarmcontroller_sample_waypoint",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "webots/controllers/swarm_controller/swarm_controller.py",
+      "source_location": "L107",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "webots_controllers_swarm_controller_swarm_controller_swarmcontroller_drive",
+      "target": "webots_controllers_swarm_controller_swarm_controller_swarmcontroller_front_clearance",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "webots/controllers/swarm_controller/swarm_controller.py",
+      "source_location": "L111",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "webots_controllers_swarm_controller_swarm_controller_swarmcontroller_run",
+      "target": "webots_controllers_swarm_controller_swarm_controller_swarmcontroller_read_pose",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "webots/controllers/swarm_controller/swarm_controller.py",
+      "source_location": "L146",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "webots_controllers_swarm_controller_swarm_controller_swarmcontroller_run",
+      "target": "webots_controllers_swarm_controller_swarm_controller_swarmcontroller_sense",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "webots/controllers/swarm_controller/swarm_controller.py",
+      "source_location": "L149",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "webots_controllers_swarm_controller_swarm_controller_swarmcontroller_run",
+      "target": "webots_controllers_swarm_controller_swarm_controller_swarmcontroller_gossip",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "webots/controllers/swarm_controller/swarm_controller.py",
+      "source_location": "L152",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "webots_controllers_swarm_controller_swarm_controller_swarmcontroller_run",
+      "target": "webots_controllers_swarm_controller_swarm_controller_swarmcontroller_drive",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "webots/controllers/swarm_controller/swarm_controller.py",
+      "source_location": "L153",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "webots_controllers_swarm_controller_swarm_controller_rationale_1",
+      "target": "webots_controllers_swarm_controller_swarm_controller",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "webots/controllers/swarm_controller/swarm_controller.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "webots_controllers_swarm_controller_swarm_controller_rationale_92",
+      "target": "webots_controllers_swarm_controller_swarm_controller_swarmcontroller_front_clearance",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "webots/controllers/swarm_controller/swarm_controller.py",
+      "source_location": "L92",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "results_b1_swarm_setup",
+      "target": "results_b1_swarm_setup_component_b1_multi_agent_simulation_setup",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "results/b1_swarm_setup.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "results_b1_swarm_setup_component_b1_multi_agent_simulation_setup",
+      "target": "results_b1_swarm_setup_agents_and_roles",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "results/b1_swarm_setup.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "results_b1_swarm_setup_component_b1_multi_agent_simulation_setup",
+      "target": "results_b1_swarm_setup_communication_topology",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "results/b1_swarm_setup.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "results_b1_swarm_setup_component_b1_multi_agent_simulation_setup",
+      "target": "results_b1_swarm_setup_cooperative_task_objective",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "results/b1_swarm_setup.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "results_b1_swarm_setup_component_b1_multi_agent_simulation_setup",
+      "target": "results_b1_swarm_setup_environment_and_controller_design_justification",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "results/b1_swarm_setup.md",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_agent",
+      "target": "component_b_swarm_environment_swarmenvironment",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/agent.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_communication",
+      "target": "component_b_swarm_agent_swarmagent",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/communication.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_environment",
+      "target": "common_environment_gridworld",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/environment.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_run_swarm_setup",
+      "target": "component_b_swarm_agent_swarmagent",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/run_swarm_setup.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_run_swarm_setup",
+      "target": "component_b_swarm_communication_communicationnetwork",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/run_swarm_setup.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_run_swarm_setup",
+      "target": "component_b_swarm_environment_swarmenvironment",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/run_swarm_setup.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "webots_controllers_swarm_controller_swarm_controller",
+      "target": "component_b_swarm_environment_swarmenvironment",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "webots/controllers/swarm_controller/swarm_controller.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_run_swarm_setup_main",
+      "target": "component_b_swarm_communication_communicationnetwork",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/swarm/run_swarm_setup.py",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_communication_communicationnetwork",
+      "target": "component_b_swarm_agent_swarmagent",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "component_b/swarm/communication.py",
+      "source_location": "L32",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_environment_make_swarm_arena",
+      "target": "common_environment_gridworld",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "component_b/swarm/environment.py",
+      "source_location": "L31",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_environment_swarmenvironment",
+      "target": "common_environment_gridworld",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "component_b/swarm/environment.py",
+      "source_location": "L58",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_run_swarm_setup_build_swarm",
+      "target": "component_b_swarm_agent_swarmagent",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "component_b/swarm/run_swarm_setup.py",
+      "source_location": "L36",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_swarm_run_swarm_setup_main",
+      "target": "component_b_swarm_communication_communicationnetwork",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "component_b/swarm/run_swarm_setup.py",
+      "source_location": "L52",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "webots_controllers_swarm_controller_swarm_controller_swarmcontroller_init",
+      "target": "component_b_swarm_environment_swarmenvironment",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "webots/controllers/swarm_controller/swarm_controller.py",
+      "source_location": "L72",
+      "weight": 1.0,
+      "_origin": "ast"
+    }
+  ],
+  "directed": false
+}

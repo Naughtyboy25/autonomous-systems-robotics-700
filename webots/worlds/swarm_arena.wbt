@@ -1,0 +1,646 @@
+#VRML_SIM V2023b utf8
+# Component B world: 30 m x 30 m swarm arena mirroring
+# component_b/swarm/environment.py (make_swarm_arena).
+# Five identical differential-drive robots (wheel radius 0.033 m, track
+# 0.16 m), one per SPAWN_POSES entry. Robot 0 ("swarm_0") is the logical
+# coordinator; hardware and controller code are identical for all agents.
+# Each robot carries: 360-deg LiDAR (obstacle probing), GPS + Compass
+# (pose stand-in for localization), and Emitter/Receiver radios with a
+# 6 m range that reproduce the unit-disc communication topology of the
+# Python swarm simulation (range field = CommunicationNetwork radius).
+
+WorldInfo {
+  coordinateSystem "ENU"
+  basicTimeStep 40
+}
+Viewpoint {
+  orientation -0.3 0.8 0.5 1.1
+  position -8 25 -8
+}
+Background {
+  skyColor [ 0.55 0.75 0.95 ]
+}
+DEF FLOOR Solid {
+  translation 15 0 15
+  children [
+    Shape {
+      appearance Appearance {
+        material Material { diffuseColor 0.92 0.92 0.92 }
+      }
+      geometry Box { size 30.6 0.1 30.6 }
+    }
+  ]
+  name "floor"
+  boundingObject Box { size 30.6 0.1 30.6 }
+}
+# ---- border walls (0.3 m thick, mirrors add_border_walls(0.3)) --------------
+DEF SW_WALL_S Solid {
+  translation 15 0.25 0.15
+  children [
+    Shape {
+      appearance Appearance { material Material { diffuseColor 0.4 0.4 0.45 } }
+      geometry Box { size 30.6 0.5 0.3 }
+    }
+  ]
+  name "wall_s"
+  boundingObject Box { size 30.6 0.5 0.3 }
+}
+DEF SW_WALL_N Solid {
+  translation 15 0.25 29.85
+  children [
+    Shape {
+      appearance Appearance { material Material { diffuseColor 0.4 0.4 0.45 } }
+      geometry Box { size 30.6 0.5 0.3 }
+    }
+  ]
+  name "wall_n"
+  boundingObject Box { size 30.6 0.5 0.3 }
+}
+DEF SW_WALL_W Solid {
+  translation 0.15 0.25 15
+  children [
+    Shape {
+      appearance Appearance { material Material { diffuseColor 0.4 0.4 0.45 } }
+      geometry Box { size 0.3 0.5 30.6 }
+    }
+  ]
+  name "wall_w"
+  boundingObject Box { size 0.3 0.5 30.6 }
+}
+DEF SW_WALL_E Solid {
+  translation 29.85 0.25 15
+  children [
+    Shape {
+      appearance Appearance { material Material { diffuseColor 0.4 0.4 0.45 } }
+      geometry Box { size 0.3 0.5 30.6 }
+    }
+  ]
+  name "wall_e"
+  boundingObject Box { size 0.3 0.5 30.6 }
+}
+# ---- rectangular obstacles (same coordinates as make_swarm_arena) -----------
+DEF OB_1 Solid {
+  translation 6.5 0.4 6
+  children [
+    Shape {
+      appearance Appearance { material Material { diffuseColor 0.25 0.25 0.28 } }
+      geometry Box { size 3 0.8 2 }
+    }
+  ]
+  name "ob_1"
+  boundingObject Box { size 3 0.8 2 }
+}
+DEF OB_2 Solid {
+  translation 15.5 0.4 6.5
+  children [
+    Shape {
+      appearance Appearance { material Material { diffuseColor 0.25 0.25 0.28 } }
+      geometry Box { size 3 0.8 5 }
+    }
+  ]
+  name "ob_2"
+  boundingObject Box { size 3 0.8 5 }
+}
+DEF OB_3 Solid {
+  translation 24 0.4 16.5
+  children [
+    Shape {
+      appearance Appearance { material Material { diffuseColor 0.25 0.25 0.28 } }
+      geometry Box { size 4 0.8 3 }
+    }
+  ]
+  name "ob_3"
+  boundingObject Box { size 4 0.8 3 }
+}
+DEF OB_4 Solid {
+  translation 8 0.4 21.5
+  children [
+    Shape {
+      appearance Appearance { material Material { diffuseColor 0.25 0.25 0.28 } }
+      geometry Box { size 4 0.8 3 }
+    }
+  ]
+  name "ob_4"
+  boundingObject Box { size 4 0.8 3 }
+}
+DEF OB_5 Solid {
+  translation 19.5 0.4 25
+  children [
+    Shape {
+      appearance Appearance { material Material { diffuseColor 0.25 0.25 0.28 } }
+      geometry Box { size 3 0.8 2 }
+    }
+  ]
+  name "ob_5"
+  boundingObject Box { size 3 0.8 2 }
+}
+# ---- circular pillars --------------------------------------------------------
+DEF PILLAR_A Solid {
+  translation 12 0.4 14
+  children [
+    Shape {
+      appearance Appearance { material Material { diffuseColor 0.3 0.3 0.33 } }
+      geometry Cylinder { radius 1.2 height 0.8 }
+    }
+  ]
+  name "pillar_a"
+  boundingObject Cylinder { radius 1.2 height 0.8 }
+}
+DEF PILLAR_B Solid {
+  translation 24 0.4 10
+  children [
+    Shape {
+      appearance Appearance { material Material { diffuseColor 0.3 0.3 0.33 } }
+      geometry Cylinder { radius 1 height 0.8 }
+    }
+  ]
+  name "pillar_b"
+  boundingObject Cylinder { radius 1 height 0.8 }
+}
+# ---- swarm robot template (instantiated 5x below) ----------------------------
+# local frame: +x forward, +y up, +z to the LEFT; wheels at z = +-0.08 m
+# ---- agent 0: coordinator, centre spawn --------------------------------------
+DEF SWARM_0 Robot {
+  translation 15 0.033 15
+  rotation 0 1 0 0
+  children [
+    Shape {
+      appearance Appearance { material Material { diffuseColor 0.8 0.2 0.2 } }
+      geometry Box { size 0.30 0.10 0.35 }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters { axis 0 0 1 anchor 0 0 0.08 }
+      device [ RotationalMotor { name "left_wheel" maxVelocity 25 } ]
+      endPoint Solid {
+        translation 0 0 0.08
+        rotation 1 0 0 1.5708
+        children [
+          Shape {
+            appearance Appearance { material Material { diffuseColor 0.1 0.1 0.1 } }
+            geometry Cylinder { radius 0.033 height 0.02 }
+          }
+        ]
+        name "left_wheel"
+        boundingObject Cylinder { radius 0.033 height 0.02 }
+        physics Physics { density -1 mass 0.1 }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters { axis 0 0 1 anchor 0 0 -0.08 }
+      device [ RotationalMotor { name "right_wheel" maxVelocity 25 } ]
+      endPoint Solid {
+        translation 0 0 -0.08
+        rotation 1 0 0 1.5708
+        children [
+          Shape {
+            appearance Appearance { material Material { diffuseColor 0.1 0.1 0.1 } }
+            geometry Cylinder { radius 0.033 height 0.02 }
+          }
+        ]
+        name "right_wheel"
+        boundingObject Cylinder { radius 0.033 height 0.02 }
+        physics Physics { density -1 mass 0.1 }
+      }
+    }
+    BallJoint {
+      jointParameters BallJointParameters { anchor 0 -0.017 -0.14 }
+      endPoint Solid {
+        translation 0 -0.017 -0.14
+        children [
+          Shape {
+            appearance Appearance { material Material { diffuseColor 0.6 0.6 0.6 } }
+            geometry Sphere { radius 0.016 }
+          }
+        ]
+        name "caster"
+        boundingObject Sphere { radius 0.016 }
+        physics Physics { density -1 mass 0.02 }
+      }
+    }
+    Lidar {
+      translation 0 0.07 0
+      children [
+        Shape {
+          appearance Appearance { material Material { diffuseColor 0.2 0.2 0.2 } }
+          geometry Cylinder { radius 0.03 height 0.05 }
+        }
+      ]
+      name "lidar"
+      type "fixed"
+      fieldOfView 6.28318
+      horizontalResolution 90
+      numberOfLayers 1
+      minRange 0.05
+      maxRange 8
+      noise 0.02
+    }
+    GPS { translation 0 0.08 0 name "gps" }
+    Compass { translation 0 0.09 0 name "compass" }
+    Emitter {
+      translation 0 0.09 0
+      name "emitter"
+      type "radio"
+      channel 1
+      range 6
+    }
+    Receiver {
+      translation 0 0.09 0
+      name "receiver"
+      type "radio"
+      channel 1
+    }
+  ]
+  name "swarm_0"
+  controller "swarm_controller"
+  controllerArgs [ "0" ]
+  boundingObject Box { size 0.30 0.10 0.35 }
+  physics Physics { density -1 mass 1.2 }
+}
+# ---- agent 1: explorer, SW corner -------------------------------------------
+DEF SWARM_1 Robot {
+  translation 3 0.033 3
+  rotation 0 1 0 -0.7854
+  children [
+    Shape {
+      appearance Appearance { material Material { diffuseColor 0.2 0.2 0.85 } }
+      geometry Box { size 0.30 0.10 0.35 }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters { axis 0 0 1 anchor 0 0 0.08 }
+      device [ RotationalMotor { name "left_wheel" maxVelocity 25 } ]
+      endPoint Solid {
+        translation 0 0 0.08
+        rotation 1 0 0 1.5708
+        children [
+          Shape {
+            appearance Appearance { material Material { diffuseColor 0.1 0.1 0.1 } }
+            geometry Cylinder { radius 0.033 height 0.02 }
+          }
+        ]
+        name "left_wheel"
+        boundingObject Cylinder { radius 0.033 height 0.02 }
+        physics Physics { density -1 mass 0.1 }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters { axis 0 0 1 anchor 0 0 -0.08 }
+      device [ RotationalMotor { name "right_wheel" maxVelocity 25 } ]
+      endPoint Solid {
+        translation 0 0 -0.08
+        rotation 1 0 0 1.5708
+        children [
+          Shape {
+            appearance Appearance { material Material { diffuseColor 0.1 0.1 0.1 } }
+            geometry Cylinder { radius 0.033 height 0.02 }
+          }
+        ]
+        name "right_wheel"
+        boundingObject Cylinder { radius 0.033 height 0.02 }
+        physics Physics { density -1 mass 0.1 }
+      }
+    }
+    BallJoint {
+      jointParameters BallJointParameters { anchor 0 -0.017 -0.14 }
+      endPoint Solid {
+        translation 0 -0.017 -0.14
+        children [
+          Shape {
+            appearance Appearance { material Material { diffuseColor 0.6 0.6 0.6 } }
+            geometry Sphere { radius 0.016 }
+          }
+        ]
+        name "caster"
+        boundingObject Sphere { radius 0.016 }
+        physics Physics { density -1 mass 0.02 }
+      }
+    }
+    Lidar {
+      translation 0 0.07 0
+      children [
+        Shape {
+          appearance Appearance { material Material { diffuseColor 0.2 0.2 0.2 } }
+          geometry Cylinder { radius 0.03 height 0.05 }
+        }
+      ]
+      name "lidar"
+      type "fixed"
+      fieldOfView 6.28318
+      horizontalResolution 90
+      numberOfLayers 1
+      minRange 0.05
+      maxRange 8
+      noise 0.02
+    }
+    GPS { translation 0 0.08 0 name "gps" }
+    Compass { translation 0 0.09 0 name "compass" }
+    Emitter {
+      translation 0 0.09 0
+      name "emitter"
+      type "radio"
+      channel 1
+      range 6
+    }
+    Receiver {
+      translation 0 0.09 0
+      name "receiver"
+      type "radio"
+      channel 1
+    }
+  ]
+  name "swarm_1"
+  controller "swarm_controller"
+  controllerArgs [ "1" ]
+  boundingObject Box { size 0.30 0.10 0.35 }
+  physics Physics { density -1 mass 1.2 }
+}
+# ---- agent 2: explorer, SE corner -------------------------------------------
+DEF SWARM_2 Robot {
+  translation 27 0.033 3
+  rotation 0 1 0 -2.3562
+  children [
+    Shape {
+      appearance Appearance { material Material { diffuseColor 0.2 0.2 0.85 } }
+      geometry Box { size 0.30 0.10 0.35 }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters { axis 0 0 1 anchor 0 0 0.08 }
+      device [ RotationalMotor { name "left_wheel" maxVelocity 25 } ]
+      endPoint Solid {
+        translation 0 0 0.08
+        rotation 1 0 0 1.5708
+        children [
+          Shape {
+            appearance Appearance { material Material { diffuseColor 0.1 0.1 0.1 } }
+            geometry Cylinder { radius 0.033 height 0.02 }
+          }
+        ]
+        name "left_wheel"
+        boundingObject Cylinder { radius 0.033 height 0.02 }
+        physics Physics { density -1 mass 0.1 }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters { axis 0 0 1 anchor 0 0 -0.08 }
+      device [ RotationalMotor { name "right_wheel" maxVelocity 25 } ]
+      endPoint Solid {
+        translation 0 0 -0.08
+        rotation 1 0 0 1.5708
+        children [
+          Shape {
+            appearance Appearance { material Material { diffuseColor 0.1 0.1 0.1 } }
+            geometry Cylinder { radius 0.033 height 0.02 }
+          }
+        ]
+        name "right_wheel"
+        boundingObject Cylinder { radius 0.033 height 0.02 }
+        physics Physics { density -1 mass 0.1 }
+      }
+    }
+    BallJoint {
+      jointParameters BallJointParameters { anchor 0 -0.017 -0.14 }
+      endPoint Solid {
+        translation 0 -0.017 -0.14
+        children [
+          Shape {
+            appearance Appearance { material Material { diffuseColor 0.6 0.6 0.6 } }
+            geometry Sphere { radius 0.016 }
+          }
+        ]
+        name "caster"
+        boundingObject Sphere { radius 0.016 }
+        physics Physics { density -1 mass 0.02 }
+      }
+    }
+    Lidar {
+      translation 0 0.07 0
+      children [
+        Shape {
+          appearance Appearance { material Material { diffuseColor 0.2 0.2 0.2 } }
+          geometry Cylinder { radius 0.03 height 0.05 }
+        }
+      ]
+      name "lidar"
+      type "fixed"
+      fieldOfView 6.28318
+      horizontalResolution 90
+      numberOfLayers 1
+      minRange 0.05
+      maxRange 8
+      noise 0.02
+    }
+    GPS { translation 0 0.08 0 name "gps" }
+    Compass { translation 0 0.09 0 name "compass" }
+    Emitter {
+      translation 0 0.09 0
+      name "emitter"
+      type "radio"
+      channel 1
+      range 6
+    }
+    Receiver {
+      translation 0 0.09 0
+      name "receiver"
+      type "radio"
+      channel 1
+    }
+  ]
+  name "swarm_2"
+  controller "swarm_controller"
+  controllerArgs [ "2" ]
+  boundingObject Box { size 0.30 0.10 0.35 }
+  physics Physics { density -1 mass 1.2 }
+}
+# ---- agent 3: explorer, NW corner -------------------------------------------
+DEF SWARM_3 Robot {
+  translation 3 0.033 27
+  rotation 0 1 0 2.3562
+  children [
+    Shape {
+      appearance Appearance { material Material { diffuseColor 0.2 0.2 0.85 } }
+      geometry Box { size 0.30 0.10 0.35 }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters { axis 0 0 1 anchor 0 0 0.08 }
+      device [ RotationalMotor { name "left_wheel" maxVelocity 25 } ]
+      endPoint Solid {
+        translation 0 0 0.08
+        rotation 1 0 0 1.5708
+        children [
+          Shape {
+            appearance Appearance { material Material { diffuseColor 0.1 0.1 0.1 } }
+            geometry Cylinder { radius 0.033 height 0.02 }
+          }
+        ]
+        name "left_wheel"
+        boundingObject Cylinder { radius 0.033 height 0.02 }
+        physics Physics { density -1 mass 0.1 }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters { axis 0 0 1 anchor 0 0 -0.08 }
+      device [ RotationalMotor { name "right_wheel" maxVelocity 25 } ]
+      endPoint Solid {
+        translation 0 0 -0.08
+        rotation 1 0 0 1.5708
+        children [
+          Shape {
+            appearance Appearance { material Material { diffuseColor 0.1 0.1 0.1 } }
+            geometry Cylinder { radius 0.033 height 0.02 }
+          }
+        ]
+        name "right_wheel"
+        boundingObject Cylinder { radius 0.033 height 0.02 }
+        physics Physics { density -1 mass 0.1 }
+      }
+    }
+    BallJoint {
+      jointParameters BallJointParameters { anchor 0 -0.017 -0.14 }
+      endPoint Solid {
+        translation 0 -0.017 -0.14
+        children [
+          Shape {
+            appearance Appearance { material Material { diffuseColor 0.6 0.6 0.6 } }
+            geometry Sphere { radius 0.016 }
+          }
+        ]
+        name "caster"
+        boundingObject Sphere { radius 0.016 }
+        physics Physics { density -1 mass 0.02 }
+      }
+    }
+    Lidar {
+      translation 0 0.07 0
+      children [
+        Shape {
+          appearance Appearance { material Material { diffuseColor 0.2 0.2 0.2 } }
+          geometry Cylinder { radius 0.03 height 0.05 }
+        }
+      ]
+      name "lidar"
+      type "fixed"
+      fieldOfView 6.28318
+      horizontalResolution 90
+      numberOfLayers 1
+      minRange 0.05
+      maxRange 8
+      noise 0.02
+    }
+    GPS { translation 0 0.08 0 name "gps" }
+    Compass { translation 0 0.09 0 name "compass" }
+    Emitter {
+      translation 0 0.09 0
+      name "emitter"
+      type "radio"
+      channel 1
+      range 6
+    }
+    Receiver {
+      translation 0 0.09 0
+      name "receiver"
+      type "radio"
+      channel 1
+    }
+  ]
+  name "swarm_3"
+  controller "swarm_controller"
+  controllerArgs [ "3" ]
+  boundingObject Box { size 0.30 0.10 0.35 }
+  physics Physics { density -1 mass 1.2 }
+}
+# ---- agent 4: explorer, SE corner of the cross, NE arena corner --------------
+DEF SWARM_4 Robot {
+  translation 27 0.033 27
+  rotation 0 1 0 0.7854
+  children [
+    Shape {
+      appearance Appearance { material Material { diffuseColor 0.2 0.2 0.85 } }
+      geometry Box { size 0.30 0.10 0.35 }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters { axis 0 0 1 anchor 0 0 0.08 }
+      device [ RotationalMotor { name "left_wheel" maxVelocity 25 } ]
+      endPoint Solid {
+        translation 0 0 0.08
+        rotation 1 0 0 1.5708
+        children [
+          Shape {
+            appearance Appearance { material Material { diffuseColor 0.1 0.1 0.1 } }
+            geometry Cylinder { radius 0.033 height 0.02 }
+          }
+        ]
+        name "left_wheel"
+        boundingObject Cylinder { radius 0.033 height 0.02 }
+        physics Physics { density -1 mass 0.1 }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters { axis 0 0 1 anchor 0 0 -0.08 }
+      device [ RotationalMotor { name "right_wheel" maxVelocity 25 } ]
+      endPoint Solid {
+        translation 0 0 -0.08
+        rotation 1 0 0 1.5708
+        children [
+          Shape {
+            appearance Appearance { material Material { diffuseColor 0.1 0.1 0.1 } }
+            geometry Cylinder { radius 0.033 height 0.02 }
+          }
+        ]
+        name "right_wheel"
+        boundingObject Cylinder { radius 0.033 height 0.02 }
+        physics Physics { density -1 mass 0.1 }
+      }
+    }
+    BallJoint {
+      jointParameters BallJointParameters { anchor 0 -0.017 -0.14 }
+      endPoint Solid {
+        translation 0 -0.017 -0.14
+        children [
+          Shape {
+            appearance Appearance { material Material { diffuseColor 0.6 0.6 0.6 } }
+            geometry Sphere { radius 0.016 }
+          }
+        ]
+        name "caster"
+        boundingObject Sphere { radius 0.016 }
+        physics Physics { density -1 mass 0.02 }
+      }
+    }
+    Lidar {
+      translation 0 0.07 0
+      children [
+        Shape {
+          appearance Appearance { material Material { diffuseColor 0.2 0.2 0.2 } }
+          geometry Cylinder { radius 0.03 height 0.05 }
+        }
+      ]
+      name "lidar"
+      type "fixed"
+      fieldOfView 6.28318
+      horizontalResolution 90
+      numberOfLayers 1
+      minRange 0.05
+      maxRange 8
+      noise 0.02
+    }
+    GPS { translation 0 0.08 0 name "gps" }
+    Compass { translation 0 0.09 0 name "compass" }
+    Emitter {
+      translation 0 0.09 0
+      name "emitter"
+      type "radio"
+      channel 1
+      range 6
+    }
+    Receiver {
+      translation 0 0.09 0
+      name "receiver"
+      type "radio"
+      channel 1
+    }
+  ]
+  name "swarm_4"
+  controller "swarm_controller"
+  controllerArgs [ "4" ]
+  boundingObject Box { size 0.30 0.10 0.35 }
+  physics Physics { density -1 mass 1.2 }
+}
