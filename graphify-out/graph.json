@@ -1,7 +1,7 @@
 {
+  "hyperedges": [],
   "input_tokens": 0,
   "output_tokens": 0,
-  "failed_sources": [],
   "nodes": [
     {
       "id": "common_init",
@@ -263,6 +263,268 @@
       "file_type": "code",
       "source_file": "component_b/consensus/__init__.py",
       "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_consensus_consensus",
+      "label": "consensus.py",
+      "file_type": "code",
+      "source_file": "component_b/consensus/consensus.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_consensus_consensus_encode_election_key",
+      "label": "encode_election_key()",
+      "file_type": "code",
+      "source_file": "component_b/consensus/consensus.py",
+      "source_location": "L34",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_consensus_consensus_decode_election_key",
+      "label": "decode_election_key()",
+      "file_type": "code",
+      "source_file": "component_b/consensus/consensus.py",
+      "source_location": "L39",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_consensus_consensus_metropolis_weights",
+      "label": "metropolis_weights()",
+      "file_type": "code",
+      "source_file": "component_b/consensus/consensus.py",
+      "source_location": "L43",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_consensus_consensus_py_ndarray",
+      "label": "ndarray",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_consensus_consensus_consensus_step",
+      "label": "consensus_step()",
+      "file_type": "code",
+      "source_file": "component_b/consensus/consensus.py",
+      "source_location": "L51",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_consensus_consensus_consensus_error",
+      "label": "consensus_error()",
+      "file_type": "code",
+      "source_file": "component_b/consensus/consensus.py",
+      "source_location": "L58",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_consensus_consensus_election_step",
+      "label": "election_step()",
+      "file_type": "code",
+      "source_file": "component_b/consensus/consensus.py",
+      "source_location": "L63",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_consensus_consensus_elected_leader",
+      "label": "elected_leader()",
+      "file_type": "code",
+      "source_file": "component_b/consensus/consensus.py",
+      "source_location": "L73",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_consensus_consensus_rationale_1",
+      "label": "Consensus and leader election over the swarm comms graph (Component B2).…",
+      "file_type": "rationale",
+      "source_file": "component_b/consensus/consensus.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_consensus_consensus_rationale_35",
+      "label": "(coverage, id) pair packed into one exactly-comparable scalar.",
+      "file_type": "rationale",
+      "source_file": "component_b/consensus/consensus.py",
+      "source_location": "L35",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_consensus_consensus_rationale_44",
+      "label": "Metropolis-Hastings edge weights for a boolean adjacency matrix.",
+      "file_type": "rationale",
+      "source_file": "component_b/consensus/consensus.py",
+      "source_location": "L44",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_consensus_consensus_rationale_52",
+      "label": "One synchronous average-consensus update (in-place semantics free).",
+      "file_type": "rationale",
+      "source_file": "component_b/consensus/consensus.py",
+      "source_location": "L52",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_consensus_consensus_rationale_59",
+      "label": "Spread of states around the swarm mean (0 when fully agreed).",
+      "file_type": "rationale",
+      "source_file": "component_b/consensus/consensus.py",
+      "source_location": "L59",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_consensus_consensus_rationale_64",
+      "label": "One flood-max hop: each agent keeps max(own key, neighbours' keys).",
+      "file_type": "rationale",
+      "source_file": "component_b/consensus/consensus.py",
+      "source_location": "L64",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_consensus_consensus_rationale_74",
+      "label": "Agent id of the component-wide elected coordinator.",
+      "file_type": "rationale",
+      "source_file": "component_b/consensus/consensus.py",
+      "source_location": "L74",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_consensus_pso",
+      "label": "pso.py",
+      "file_type": "code",
+      "source_file": "component_b/consensus/pso.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_consensus_pso_pso",
+      "label": "PSO",
+      "file_type": "code",
+      "source_file": "component_b/consensus/pso.py",
+      "source_location": "L31",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_consensus_pso_pso_optimize",
+      "label": ".optimize()",
+      "file_type": "code",
+      "source_file": "component_b/consensus/pso.py",
+      "source_location": "L42",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_consensus_pso_py_ndarray",
+      "label": "ndarray",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_consensus_pso_rationale_1",
+      "label": "Particle Swarm Optimisation for distributed waypoint allocation (B2). Each…",
+      "file_type": "rationale",
+      "source_file": "component_b/consensus/pso.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_consensus_pso_rationale_43",
+      "label": "Run PSO; return (best_position, best_fitness, per-iter best history).",
+      "file_type": "rationale",
+      "source_file": "component_b/consensus/pso.py",
+      "source_location": "L43",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_consensus_run_consensus_pso",
+      "label": "run_consensus_pso.py",
+      "file_type": "code",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_consensus_run_consensus_pso_pso_waypoint",
+      "label": "pso_waypoint()",
+      "file_type": "code",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L46",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_consensus_run_consensus_pso_run_swarm",
+      "label": "run_swarm()",
+      "file_type": "code",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L88",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_consensus_run_consensus_pso_standalone_consensus_demo",
+      "label": "standalone_consensus_demo()",
+      "file_type": "code",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L148",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_consensus_run_consensus_pso_main",
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L172",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_consensus_run_consensus_pso_rationale_1",
+      "label": "Component B2 driver: consensus + PSO-driven coverage vs the B1 baseline. Three…",
+      "file_type": "rationale",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_consensus_run_consensus_pso_rationale_49",
+      "label": "Choose a new waypoint with local PSO on the agent's belief map.",
+      "file_type": "rationale",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L49",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_consensus_run_consensus_pso_rationale_89",
+      "label": "Run the 90 s swarm sim with either the B1 baseline or PSO waypoints.",
+      "file_type": "rationale",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L89",
+      "_origin": "ast"
+    },
+    {
+      "id": "component_b_consensus_run_consensus_pso_rationale_149",
+      "label": "Consensus error on a static graph vs a time-varying (switching) graph.",
+      "file_type": "rationale",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L149",
       "_origin": "ast"
     },
     {
@@ -762,6 +1024,38 @@
       "source_file": "results/b1_swarm_setup.md",
       "source_location": "L30",
       "_origin": "ast"
+    },
+    {
+      "id": "results_b2_consensus_pso_results",
+      "label": "b2_consensus_pso_results.md",
+      "file_type": "document",
+      "source_file": "results/b2_consensus_pso_results.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "results_b2_consensus_pso_results_component_b2_consensus_pso_results_90_s_horizon_3_seeds",
+      "label": "Component B2 - Consensus + PSO results (90 s horizon, 3 seeds)",
+      "file_type": "document",
+      "source_file": "results/b2_consensus_pso_results.md",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "results_b2_consensus_pso_results_emergent_behaviour",
+      "label": "Emergent behaviour",
+      "file_type": "document",
+      "source_file": "results/b2_consensus_pso_results.md",
+      "source_location": "L11",
+      "_origin": "ast"
+    },
+    {
+      "id": "results_b2_consensus_pso_results_convergence",
+      "label": "Convergence",
+      "file_type": "document",
+      "source_file": "results/b2_consensus_pso_results.md",
+      "source_location": "L21",
+      "_origin": "ast"
     }
   ],
   "links": [
@@ -1092,6 +1386,552 @@
       "confidence": "EXTRACTED",
       "source_file": "common/environment.py",
       "source_location": "L124",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_consensus",
+      "target": "numpy",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/consensus.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_consensus",
+      "target": "component_b_consensus_consensus_encode_election_key",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/consensus.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_consensus",
+      "target": "component_b_consensus_consensus_decode_election_key",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/consensus.py",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_consensus",
+      "target": "component_b_consensus_consensus_metropolis_weights",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/consensus.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_consensus_metropolis_weights",
+      "target": "component_b_consensus_consensus_py_ndarray",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/consensus.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_consensus",
+      "target": "component_b_consensus_consensus_consensus_step",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/consensus.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_consensus_consensus_step",
+      "target": "component_b_consensus_consensus_py_ndarray",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/consensus.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_consensus",
+      "target": "component_b_consensus_consensus_consensus_error",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/consensus.py",
+      "source_location": "L58",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_consensus_consensus_error",
+      "target": "component_b_consensus_consensus_py_ndarray",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/consensus.py",
+      "source_location": "L58",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_consensus",
+      "target": "component_b_consensus_consensus_election_step",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/consensus.py",
+      "source_location": "L63",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_consensus_election_step",
+      "target": "component_b_consensus_consensus_py_ndarray",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/consensus.py",
+      "source_location": "L63",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_consensus",
+      "target": "component_b_consensus_consensus_elected_leader",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/consensus.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_consensus_elected_leader",
+      "target": "component_b_consensus_consensus_py_ndarray",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/consensus.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_consensus_consensus_step",
+      "target": "component_b_consensus_consensus_metropolis_weights",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/consensus.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_consensus_rationale_1",
+      "target": "component_b_consensus_consensus",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/consensus.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_consensus_rationale_35",
+      "target": "component_b_consensus_consensus_encode_election_key",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/consensus.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_consensus_rationale_44",
+      "target": "component_b_consensus_consensus_metropolis_weights",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/consensus.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_consensus_rationale_52",
+      "target": "component_b_consensus_consensus_consensus_step",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/consensus.py",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_consensus_rationale_59",
+      "target": "component_b_consensus_consensus_consensus_error",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/consensus.py",
+      "source_location": "L59",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_consensus_rationale_64",
+      "target": "component_b_consensus_consensus_election_step",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/consensus.py",
+      "source_location": "L64",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_consensus_rationale_74",
+      "target": "component_b_consensus_consensus_elected_leader",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/consensus.py",
+      "source_location": "L74",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_pso",
+      "target": "dataclasses",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/pso.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_pso",
+      "target": "typing",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/pso.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_pso",
+      "target": "numpy",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/pso.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_pso",
+      "target": "component_b_consensus_pso_pso",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/pso.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_pso_pso",
+      "target": "component_b_consensus_pso_pso_optimize",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/pso.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_pso_pso_optimize",
+      "target": "component_b_consensus_pso_py_ndarray",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/pso.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_pso_rationale_1",
+      "target": "component_b_consensus_pso",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/pso.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_pso_rationale_43",
+      "target": "component_b_consensus_pso_pso_optimize",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/pso.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_run_consensus_pso",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_run_consensus_pso",
+      "target": "matplotlib_pyplot",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_run_consensus_pso",
+      "target": "numpy",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_run_consensus_pso",
+      "target": "component_b_consensus_consensus",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_run_consensus_pso",
+      "target": "component_b_consensus_pso",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_run_consensus_pso",
+      "target": "component_b_swarm_agent",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_run_consensus_pso",
+      "target": "component_b_swarm_communication",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_run_consensus_pso",
+      "target": "component_b_swarm_environment",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_run_consensus_pso",
+      "target": "component_b_swarm_run_swarm_setup",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_run_consensus_pso",
+      "target": "component_b_consensus_run_consensus_pso_pso_waypoint",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_run_consensus_pso_pso_waypoint",
+      "target": "component_b_swarm_agent_swarmagent",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_run_consensus_pso_pso_waypoint",
+      "target": "component_b_swarm_environment_swarmenvironment",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_run_consensus_pso",
+      "target": "component_b_consensus_run_consensus_pso_run_swarm",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L88",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_run_consensus_pso",
+      "target": "component_b_consensus_run_consensus_pso_standalone_consensus_demo",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L148",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_run_consensus_pso",
+      "target": "component_b_consensus_run_consensus_pso_main",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L172",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_run_consensus_pso_run_swarm",
+      "target": "component_b_swarm_environment_swarmenvironment",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L91",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_run_consensus_pso_run_swarm",
+      "target": "component_b_consensus_run_consensus_pso_pso_waypoint",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L111",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_run_consensus_pso_main",
+      "target": "component_b_consensus_run_consensus_pso_standalone_consensus_demo",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L177",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_run_consensus_pso_main",
+      "target": "component_b_consensus_run_consensus_pso_run_swarm",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L180",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_run_consensus_pso_rationale_1",
+      "target": "component_b_consensus_run_consensus_pso",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_run_consensus_pso_rationale_49",
+      "target": "component_b_consensus_run_consensus_pso_pso_waypoint",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_run_consensus_pso_rationale_89",
+      "target": "component_b_consensus_run_consensus_pso_run_swarm",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L89",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_run_consensus_pso_rationale_149",
+      "target": "component_b_consensus_run_consensus_pso_standalone_consensus_demo",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L149",
       "weight": 1.0,
       "_origin": "ast"
     },
@@ -2101,6 +2941,146 @@
       "_origin": "ast"
     },
     {
+      "source": "results_b2_consensus_pso_results",
+      "target": "results_b2_consensus_pso_results_component_b2_consensus_pso_results_90_s_horizon_3_seeds",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "results/b2_consensus_pso_results.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "results_b2_consensus_pso_results_component_b2_consensus_pso_results_90_s_horizon_3_seeds",
+      "target": "results_b2_consensus_pso_results_emergent_behaviour",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "results/b2_consensus_pso_results.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "results_b2_consensus_pso_results_component_b2_consensus_pso_results_90_s_horizon_3_seeds",
+      "target": "results_b2_consensus_pso_results_convergence",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "results/b2_consensus_pso_results.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_run_consensus_pso",
+      "target": "component_b_consensus_consensus_consensus_error",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_run_consensus_pso",
+      "target": "component_b_consensus_consensus_consensus_step",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_run_consensus_pso",
+      "target": "component_b_consensus_consensus_election_step",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_run_consensus_pso",
+      "target": "component_b_consensus_consensus_elected_leader",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_run_consensus_pso",
+      "target": "component_b_consensus_consensus_encode_election_key",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_run_consensus_pso",
+      "target": "component_b_consensus_pso_pso",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_run_consensus_pso",
+      "target": "component_b_swarm_agent_swarmagent",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_run_consensus_pso",
+      "target": "component_b_swarm_communication_communicationnetwork",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_run_consensus_pso",
+      "target": "component_b_swarm_environment_swarmenvironment",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_run_consensus_pso",
+      "target": "component_b_swarm_run_swarm_setup_build_swarm",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "component_b_swarm_agent",
       "target": "component_b_swarm_environment_swarmenvironment",
       "relation": "imports",
@@ -2178,6 +3158,116 @@
       "_origin": "ast"
     },
     {
+      "source": "component_b_consensus_run_consensus_pso_pso_waypoint",
+      "target": "component_b_consensus_pso_pso",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L83",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_run_consensus_pso_run_swarm",
+      "target": "component_b_swarm_run_swarm_setup_build_swarm",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L92",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_run_consensus_pso_run_swarm",
+      "target": "component_b_swarm_communication_communicationnetwork",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L93",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_run_consensus_pso_run_swarm",
+      "target": "component_b_consensus_consensus_encode_election_key",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L99",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_run_consensus_pso_run_swarm",
+      "target": "component_b_consensus_consensus_consensus_step",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L134",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_run_consensus_pso_run_swarm",
+      "target": "component_b_consensus_consensus_election_step",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L137",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_run_consensus_pso_run_swarm",
+      "target": "component_b_consensus_consensus_consensus_error",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L138",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_run_consensus_pso_run_swarm",
+      "target": "component_b_consensus_consensus_elected_leader",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L142",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_run_consensus_pso_standalone_consensus_demo",
+      "target": "component_b_consensus_consensus_consensus_step",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L162",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_run_consensus_pso_standalone_consensus_demo",
+      "target": "component_b_consensus_consensus_consensus_error",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L163",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
       "source": "component_b_swarm_run_swarm_setup_main",
       "target": "component_b_swarm_communication_communicationnetwork",
       "relation": "calls",
@@ -2186,6 +3276,36 @@
       "source_file": "component_b/swarm/run_swarm_setup.py",
       "source_location": "L52",
       "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_run_consensus_pso_pso_waypoint",
+      "target": "component_b_consensus_pso_pso",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L83",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_run_consensus_pso_pso_waypoint",
+      "target": "component_b_swarm_agent_swarmagent",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L46",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "component_b_consensus_run_consensus_pso_run_swarm",
+      "target": "component_b_swarm_communication_communicationnetwork",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "component_b/consensus/run_consensus_pso.py",
+      "source_location": "L93",
+      "weight": 0.8,
       "_origin": "ast"
     },
     {

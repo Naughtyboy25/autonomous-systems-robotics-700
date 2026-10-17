@@ -1,134 +1,176 @@
 {
   "common/__init__.py": {
     "mtime": 1790903460.856185,
-    "seen": 1792259867.4513562,
+    "seen": 1792267917.9098604,
     "ast_hash": "51b80b43ae21c28b9464b6d11ed0230c",
     "semantic_hash": ""
   },
   "common/environment.py": {
     "mtime": 1792255008.1971092,
-    "seen": 1792259867.4513714,
+    "seen": 1792267917.9098678,
     "ast_hash": "83e1ec635cbe63b0245232c5f32ddfe2",
     "semantic_hash": ""
   },
   "component_a/__init__.py": {
     "mtime": 1790903588.062,
-    "seen": 1792259867.4513783,
+    "seen": 1792267917.9098716,
     "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
     "semantic_hash": ""
   },
   "component_a/control/__init__.py": {
     "mtime": 1790903588.088,
-    "seen": 1792259867.451383,
+    "seen": 1792267917.9098742,
     "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
     "semantic_hash": ""
   },
   "component_a/integration/__init__.py": {
     "mtime": 1790903588.089,
-    "seen": 1792259867.451387,
+    "seen": 1792267917.909876,
     "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
     "semantic_hash": ""
   },
   "component_a/perception/__init__.py": {
     "mtime": 1790903588.086,
-    "seen": 1792259867.4513905,
+    "seen": 1792267917.9098785,
     "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
     "semantic_hash": ""
   },
   "component_a/planning/__init__.py": {
     "mtime": 1790903588.088,
-    "seen": 1792259867.451394,
+    "seen": 1792267917.9098804,
     "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
     "semantic_hash": ""
   },
   "component_b/__init__.py": {
     "mtime": 1790903588.089,
-    "seen": 1792259867.4513972,
+    "seen": 1792267917.9098818,
     "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
     "semantic_hash": ""
   },
   "component_b/consensus/__init__.py": {
     "mtime": 1790903588.09,
-    "seen": 1792259867.4514,
+    "seen": 1792267917.9098835,
     "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
     "semantic_hash": ""
   },
   "component_b/ml/__init__.py": {
     "mtime": 1790903588.091,
-    "seen": 1792259867.4514034,
+    "seen": 1792267917.9098897,
     "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
     "semantic_hash": ""
   },
   "component_b/swarm/__init__.py": {
     "mtime": 1790903588.09,
-    "seen": 1792259867.4514065,
+    "seen": 1792267917.9098916,
     "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
     "semantic_hash": ""
   },
   "component_b/swarm/agent.py": {
     "mtime": 1792255573.660217,
-    "seen": 1792259867.4514098,
+    "seen": 1792267917.909893,
     "ast_hash": "244763d971cdfa82a2e8615c8085ec8a",
     "semantic_hash": ""
   },
   "component_b/swarm/communication.py": {
     "mtime": 1792256170.9044373,
-    "seen": 1792259867.451413,
+    "seen": 1792267917.9098945,
     "ast_hash": "67234498676422d937c9fac4111233c7",
     "semantic_hash": ""
   },
   "component_b/swarm/environment.py": {
     "mtime": 1792255547.7292595,
-    "seen": 1792259867.4514158,
+    "seen": 1792267917.9098957,
     "ast_hash": "79401c79a9d0189a7949431158b66f12",
     "semantic_hash": ""
   },
   "component_b/swarm/run_swarm_setup.py": {
     "mtime": 1792257039.8104224,
-    "seen": 1792259867.4514186,
+    "seen": 1792267917.9098973,
     "ast_hash": "66b3b642bd9216ac1e3c97b35be6caa0",
     "semantic_hash": ""
   },
   "pyproject.toml": {
     "mtime": 1790903025.389619,
-    "seen": 1792259867.4514222,
+    "seen": 1792267917.9098988,
     "ast_hash": "bd24c13c81c6e00e200354b43bdc4387",
     "semantic_hash": ""
   },
   "scripts/__init__.py": {
     "mtime": 1790903588.094,
-    "seen": 1792259867.4514258,
+    "seen": 1792267917.9099002,
     "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
     "semantic_hash": ""
   },
   "webots/controllers/swarm_controller/swarm_controller.py": {
     "mtime": 1792259611.0111475,
-    "seen": 1792259867.4514294,
+    "seen": 1792267917.9099019,
     "ast_hash": "b4614e9f6f13b52ed0687db4dd5fb51b",
     "semantic_hash": ""
   },
   "assignment.txt": {
     "mtime": 1790881534.5238066,
-    "seen": 1792259867.4514322,
+    "seen": 1792267917.9099045,
     "ast_hash": "dc85ddf6f7356acb27f47b8ecfe1473f",
     "semantic_hash": ""
   },
   "results/b1_swarm_setup.md": {
     "mtime": 1792257619.6726606,
-    "seen": 1792259867.4514356,
+    "seen": 1792267917.909906,
     "ast_hash": "1580c3aa31afb154d20d303c42d006a6",
     "semantic_hash": ""
   },
   "assignment.pdf": {
     "mtime": 1790884683.0602655,
-    "seen": 1792259867.451439,
+    "seen": 1792267917.9099104,
     "ast_hash": "b13d0a9368e33f196aaefb794ad162da",
     "semantic_hash": ""
   },
   "plots/b1_swarm_setup.png": {
     "mtime": 1792257619.6569753,
-    "seen": 1792259867.4514432,
+    "seen": 1792267917.9099138,
     "ast_hash": "fb98f13aba3763262d8fa7986c1167dc",
+    "semantic_hash": ""
+  },
+  "component_b/consensus/consensus.py": {
+    "mtime": 1792261381.6291447,
+    "seen": 1792267917.909885,
+    "ast_hash": "01a8f7c910ecd4fd3ddc859e7ecf6078",
+    "semantic_hash": ""
+  },
+  "component_b/consensus/pso.py": {
+    "mtime": 1792260753.276016,
+    "seen": 1792267917.9098868,
+    "ast_hash": "49cc580ccf9b8c455d3143cb4a9f8265",
+    "semantic_hash": ""
+  },
+  "component_b/consensus/run_consensus_pso.py": {
+    "mtime": 1792266982.5939586,
+    "seen": 1792267917.9098883,
+    "ast_hash": "d1f559ab5c6e29c9f2b313dcd73828fa",
+    "semantic_hash": ""
+  },
+  "results/b2_consensus_pso_results.md": {
+    "mtime": 1792267622.590693,
+    "seen": 1792267917.9099073,
+    "ast_hash": "7d50ab60f5307847882a8e4a49127383",
+    "semantic_hash": ""
+  },
+  "plots/b2_consensus_convergence.png": {
+    "mtime": 1792267621.557566,
+    "seen": 1792267917.9099154,
+    "ast_hash": "aa0cc7d18dd01acfe5dbc3ab086ffb83",
+    "semantic_hash": ""
+  },
+  "plots/b2_pso_coverage.png": {
+    "mtime": 1792267622.0721178,
+    "seen": 1792267917.9099174,
+    "ast_hash": "7b8045e1d66beb8fc8d6a04e7fca25c1",
+    "semantic_hash": ""
+  },
+  "plots/b2_pso_emergent.png": {
+    "mtime": 1792267622.570842,
+    "seen": 1792267917.909919,
+    "ast_hash": "afd4406fbf81e9611b02c88e4eb497f5",
     "semantic_hash": ""
   }
 }
