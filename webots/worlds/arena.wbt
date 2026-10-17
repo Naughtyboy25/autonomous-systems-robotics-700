@@ -1,0 +1,314 @@
+#VRML_SIM V2023b utf8
+# Component A world: 20 m x 20 m arena mirroring make_assignment_arena()
+# Layout (metres, ENU: x = East, z = North, y = up):
+#   border walls (0.2 m thick), 5 rectangular blocks, 2 circular pillars,
+#   3 colour-coded landmarks (red/green/blue) used by the camera pipeline.
+# The robot starts at (1.5, 1.5) facing NE (45 deg) and must reach (18.0, 17.0).
+# Differential-drive robot: wheel radius 0.033 m, track width 0.16 m
+# (same constants as component_a/control/kinematics.py).
+
+WorldInfo {
+  coordinateSystem "ENU"
+  basicTimeStep 40
+}
+Viewpoint {
+  orientation -0.35 0.75 0.55 1.05
+  position -6 18 -6
+}
+Background {
+  skyColor [ 0.55 0.75 0.95 ]
+}
+DEF FLOOR Solid {
+  translation 10 0 10
+  children [
+    Shape {
+      appearance Appearance {
+        material Material { diffuseColor 0.9 0.9 0.9 }
+      }
+      geometry Box { size 20.4 0.1 20.4 }
+    }
+  ]
+  name "floor"
+  boundingObject Box { size 20.4 0.1 20.4 }
+}
+# ---- border walls ----------------------------------------------------------
+DEF WALL_S Solid {
+  translation 10 0.25 0.1
+  children [
+    Shape {
+      appearance Appearance { material Material { diffuseColor 0.4 0.4 0.45 } }
+      geometry Box { size 20.4 0.5 0.2 }
+    }
+  ]
+  name "wall_s"
+  boundingObject Box { size 20.4 0.5 0.2 }
+}
+DEF WALL_N Solid {
+  translation 10 0.25 19.9
+  children [
+    Shape {
+      appearance Appearance { material Material { diffuseColor 0.4 0.4 0.45 } }
+      geometry Box { size 20.4 0.5 0.2 }
+    }
+  ]
+  name "wall_n"
+  boundingObject Box { size 20.4 0.5 0.2 }
+}
+DEF WALL_W Solid {
+  translation 0.1 0.25 10
+  children [
+    Shape {
+      appearance Appearance { material Material { diffuseColor 0.4 0.4 0.45 } }
+      geometry Box { size 0.2 0.5 20.4 }
+    }
+  ]
+  name "wall_w"
+  boundingObject Box { size 0.2 0.5 20.4 }
+}
+DEF WALL_E Solid {
+  translation 19.9 0.25 10
+  children [
+    Shape {
+      appearance Appearance { material Material { diffuseColor 0.4 0.4 0.45 } }
+      geometry Box { size 0.2 0.5 20.4 }
+    }
+  ]
+  name "wall_e"
+  boundingObject Box { size 0.2 0.5 20.4 }
+}
+# ---- rectangular obstacles (same coordinates as make_assignment_arena) ----
+DEF BLOCK_1 Solid {
+  translation 5.25 0.4 4.75
+  children [
+    Shape {
+      appearance Appearance { material Material { diffuseColor 0.25 0.25 0.28 } }
+      geometry Box { size 2.5 0.8 1.5 }
+    }
+  ]
+  name "block_1"
+  boundingObject Box { size 2.5 0.8 1.5 }
+}
+DEF BLOCK_2 Solid {
+  translation 10.75 0.4 10.25
+  children [
+    Shape {
+      appearance Appearance { material Material { diffuseColor 0.25 0.25 0.28 } }
+      geometry Box { size 1.5 0.8 4.5 }
+    }
+  ]
+  name "block_2"
+  boundingObject Box { size 1.5 0.8 4.5 }
+}
+DEF BLOCK_3 Solid {
+  translation 15.75 0.4 3.6
+  children [
+    Shape {
+      appearance Appearance { material Material { diffuseColor 0.25 0.25 0.28 } }
+      geometry Box { size 3.5 0.8 1.2 }
+    }
+  ]
+  name "block_3"
+  boundingObject Box { size 3.5 0.8 1.2 }
+}
+DEF BLOCK_4 Solid {
+  translation 4 0.4 13.25
+  children [
+    Shape {
+      appearance Appearance { material Material { diffuseColor 0.25 0.25 0.28 } }
+      geometry Box { size 2 0.8 2.5 }
+    }
+  ]
+  name "block_4"
+  boundingObject Box { size 2 0.8 2.5 }
+}
+DEF BLOCK_5 Solid {
+  translation 14.5 0.4 15.5
+  children [
+    Shape {
+      appearance Appearance { material Material { diffuseColor 0.25 0.25 0.28 } }
+      geometry Box { size 2 0.8 3 }
+    }
+  ]
+  name "block_5"
+  boundingObject Box { size 2 0.8 3 }
+}
+# ---- circular pillars -------------------------------------------------------
+DEF PILLAR_1 Solid {
+  translation 8 0.4 15.5
+  children [
+    Shape {
+      appearance Appearance { material Material { diffuseColor 0.3 0.3 0.33 } }
+      geometry Cylinder { radius 1 height 0.8 }
+    }
+  ]
+  name "pillar_1"
+  boundingObject Cylinder { radius 1 height 0.8 }
+}
+DEF PILLAR_2 Solid {
+  translation 15.5 0.4 9
+  children [
+    Shape {
+      appearance Appearance { material Material { diffuseColor 0.3 0.3 0.33 } }
+      geometry Cylinder { radius 0.8 height 0.8 }
+    }
+  ]
+  name "pillar_2"
+  boundingObject Cylinder { radius 0.8 height 0.8 }
+}
+# ---- colour-coded landmarks (camera pipeline) -------------------------------
+DEF LANDMARK_RED Solid {
+  translation 2 0.15 2
+  children [
+    Shape {
+      appearance Appearance { material Material { diffuseColor 0.85 0.05 0.05 } }
+      geometry Cylinder { radius 0.2 height 0.3 }
+    }
+  ]
+  name "landmark_red"
+  boundingObject Cylinder { radius 0.2 height 0.3 }
+}
+DEF LANDMARK_GREEN Solid {
+  translation 18 0.15 18
+  children [
+    Shape {
+      appearance Appearance { material Material { diffuseColor 0.05 0.7 0.1 } }
+      geometry Cylinder { radius 0.2 height 0.3 }
+    }
+  ]
+  name "landmark_green"
+  boundingObject Cylinder { radius 0.2 height 0.3 }
+}
+DEF LANDMARK_BLUE Solid {
+  translation 18 0.15 6.5
+  children [
+    Shape {
+      appearance Appearance { material Material { diffuseColor 0.05 0.15 0.85 } }
+      geometry Cylinder { radius 0.2 height 0.3 }
+    }
+  ]
+  name "landmark_blue"
+  boundingObject Cylinder { radius 0.2 height 0.3 }
+}
+# ---- differential-drive robot -----------------------------------------------
+# local frame: +x forward, +y up, +z to the LEFT (right-handed ENU)
+# wheels on the z axis at +-0.08 m (track 0.16 m), radius 0.033 m
+DEF NAV_ROBOT Robot {
+  translation 1.5 0.033 1.5
+  rotation 0 1 0 -0.7854
+  children [
+    Shape {
+      appearance Appearance { material Material { diffuseColor 0.15 0.35 0.75 } }
+      geometry Box { size 0.30 0.10 0.35 }
+    }
+    DEF LEFT_WHEEL HingeJoint {
+      jointParameters HingeJointParameters {
+        axis 0 0 1
+        anchor 0 0 0.08
+      }
+      device [
+        RotationalMotor {
+          name "left_wheel"
+          maxVelocity 25
+        }
+      ]
+      endPoint Solid {
+        translation 0 0 0.08
+        rotation 1 0 0 1.5708
+        children [
+          Shape {
+            appearance Appearance { material Material { diffuseColor 0.1 0.1 0.1 } }
+            geometry Cylinder { radius 0.033 height 0.02 }
+          }
+        ]
+        name "left_wheel"
+        boundingObject Cylinder { radius 0.033 height 0.02 }
+        physics Physics { density -1 mass 0.1 }
+      }
+    }
+    DEF RIGHT_WHEEL HingeJoint {
+      jointParameters HingeJointParameters {
+        axis 0 0 1
+        anchor 0 0 -0.08
+      }
+      device [
+        RotationalMotor {
+          name "right_wheel"
+          maxVelocity 25
+        }
+      ]
+      endPoint Solid {
+        translation 0 0 -0.08
+        rotation 1 0 0 1.5708
+        children [
+          Shape {
+            appearance Appearance { material Material { diffuseColor 0.1 0.1 0.1 } }
+            geometry Cylinder { radius 0.033 height 0.02 }
+          }
+        ]
+        name "right_wheel"
+        boundingObject Cylinder { radius 0.033 height 0.02 }
+        physics Physics { density -1 mass 0.1 }
+      }
+    }
+    DEF CASTER BallJoint {
+      jointParameters BallJointParameters {
+        anchor 0 -0.017 -0.14
+      }
+      endPoint Solid {
+        translation 0 -0.017 -0.14
+        children [
+          Shape {
+            appearance Appearance { material Material { diffuseColor 0.6 0.6 0.6 } }
+            geometry Sphere { radius 0.016 }
+          }
+        ]
+        name "caster"
+        boundingObject Sphere { radius 0.016 }
+        physics Physics { density -1 mass 0.02 }
+      }
+    }
+    DEF LIDAR Lidar {
+      translation 0 0.07 0
+      children [
+        Shape {
+          appearance Appearance { material Material { diffuseColor 0.2 0.2 0.2 } }
+          geometry Cylinder { radius 0.03 height 0.05 }
+        }
+      ]
+      name "lidar"
+      type "fixed"
+      fieldOfView 6.28318
+      horizontalResolution 90
+      numberOfLayers 1
+      minRange 0.05
+      maxRange 8
+      noise 0.02
+    }
+    DEF CAM Camera {
+      translation 0.16 0.05 0
+      rotation 0 0 1 -0.6
+      children [
+        Shape {
+          appearance Appearance { material Material { diffuseColor 0.05 0.05 0.05 } }
+          geometry Box { size 0.02 0.03 0.06 }
+        }
+      ]
+      name "camera"
+      fieldOfView 0.9
+      width 160
+      height 120
+    }
+    DEF GPS GPS {
+      translation 0 0.08 0
+      name "gps"
+    }
+    DEF COMPASS Compass {
+      translation 0 0.09 0
+      name "compass"
+    }
+  ]
+  name "nav_robot"
+  controller "nav_controller"
+  boundingObject Box { size 0.30 0.10 0.35 }
+  physics Physics { density -1 mass 1.2 }
+}
